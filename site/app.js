@@ -72,7 +72,7 @@ function openDialog(id){
 }
 function closeDialog(dialog){
   if(!dialog?.open)return;
-  if(dialog.id==='promoDialog')writeStore('fp-v6-offer-seen',Date.now());
+  if(dialog.id==='promoDialog')writeStore('fp-v7-offer-dismissed',true,true);
   if(dialog.id==='mobileMenu')$('[data-menu]').setAttribute('aria-expanded','false');
   if(motionPaused){dialog.close();dialog._trigger?.isConnected&&dialog._trigger.focus();return;}
   dialog.classList.add('closing');
@@ -207,7 +207,7 @@ function showInfo(kind){
   const content=kind==='gift'?`<p class="eyebrow">GIVE A LITTLE FRESH</p><h2 id="infoTitle">Good taste.<br>Great gift.</h2><p>A fresh favorite makes a thoughtful treat. Contact our Plantsville store to ask about gift card availability.</p><a class="button" href="tel:+18604260342">Ask about gift cards ${icon('arrow')}</a>`:`<p class="eyebrow">A FRESH ROUTINE</p><h2 id="infoTitle">Same good sip.<br>More good days.</h2><p>Subscribe & save is coming to online ordering. Explore your favorites today; recurring orders and subscription savings are not available yet.</p><a class="button" href="shop.html?cat=juice">Find my daily fresh ${icon('arrow')}</a>`;
   $('#infoContent').innerHTML=content;openDialog('infoDialog');
 }
-function showPromo(){writeStore('fp-v6-offer-seen',Date.now());openDialog('promoDialog');}
+function showPromo(){writeStore('fp-v7-offer-auto-shown',true,true);openDialog('promoDialog');}
 $('#offerForm').addEventListener('submit',async event=>{
   event.preventDefault();const input=$('#offerEmail'),button=$('#offerSubmit'),error=$('#offerError');
   const email=input.value.trim();error.textContent='';input.removeAttribute('aria-invalid');
@@ -229,8 +229,19 @@ $('#offerForm').addEventListener('submit',async event=>{
 $('#offerReset').addEventListener('click',()=>{$('#offerFormState').hidden=false;$('#offerSuccess').hidden=true;$('#promoDialog').setAttribute('aria-labelledby','promoTitle');$('#offerError').textContent='';$('#offerEmail').focus();});
 let lastInteraction=0;
 document.addEventListener('pointerdown',()=>{lastInteraction=Date.now();},{passive:true});
-// One delayed offer per seven days. Never interrupt an open menu, cart or builder.
-setTimeout(()=>{const seen=Number(readStore('fp-v6-offer-seen',0));if(!seen||Date.now()-seen>7*24*60*60*1000){if(!document.hidden&&!$('dialog[open]')&&!cart.length&&Date.now()-lastInteraction>2000)showPromo();}},14000);
+// On the homepage, surface the first-order offer after a few seconds on the first visit of the tab.
+// If another dialog is open at that exact moment, retry briefly instead of silently losing the offer.
+function scheduleFirstOrderOffer(){
+  if(!document.body.classList.contains('home')||readStore('fp-v7-offer-auto-shown',false,true)||readStore('fp-v7-offer-dismissed',false,true))return;
+  let attempts=0;
+  const tryOpen=()=>{
+    attempts++;
+    if(!document.hidden&&!$('dialog[open]')&&!cart.length&&Date.now()-lastInteraction>1200){showPromo();return;}
+    if(attempts<8)setTimeout(tryOpen,1800);
+  };
+  setTimeout(tryOpen,5200);
+}
+scheduleFirstOrderOffer();
 
 document.addEventListener('click',event=>{
   const target=event.target.closest('button,a');if(!target)return;
@@ -272,24 +283,39 @@ document.addEventListener('click',event=>{if(!event.target.closest('.shop-nav')&
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&mega&&!mega.hidden){mega.hidden=true;megaToggle.setAttribute('aria-expanded','false');megaToggle.focus();}});
 document.addEventListener('focusin',event=>{if(mega&&!mega.hidden&&!event.target.closest('.shop-nav')){mega.hidden=true;megaToggle.setAttribute('aria-expanded','false');}});
 
-const revealObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.01,rootMargin:'280px 0px 280px 0px'}):null;
+function seedMotionTargets(){
+  $$('.category-row,.build-grid,.story-grid').forEach(group=>{
+    [...group.children].forEach((el,index)=>{
+      el.classList.add('reveal','reveal-item');
+      el.style.setProperty('--delay',`${Math.min(index,3)*70}ms`);
+    });
+  });
+  $$('.center-action,.community .button,.visit-actions').forEach(el=>el.classList.add('reveal'));
+}
+seedMotionTargets();
+const revealObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.04,rootMargin:'110px 0px 90px 0px'}):null;
 function observeReveals(){if(!revealObserver||motionPaused){$$('.reveal').forEach(el=>el.classList.add('visible'));return;}$$('.reveal:not(.visible)').forEach(el=>revealObserver.observe(el));}
 function updateVideoControl(video){const button=$('.film-toggle',video.closest('.film'));if(button){button.innerHTML=icon(video.paused?'play':'pause');button.setAttribute('aria-label',`${video.paused?'Play':'Pause'} ${video.getAttribute('aria-label')||'video'}`);}}
-function ensureVideo(video){if(!video.getAttribute('src')&&video.dataset.video){video.src=video.dataset.video;video.load();}video.muted=true;}
+function ensureVideo(video){if(!video.getAttribute('src')&&video.dataset.video){video.src=video.dataset.video;video.load();}video.muted=true;video.defaultMuted=true;video.playsInline=true;video.setAttribute('playsinline','');video.setAttribute('muted','');}
 function syncVideos(){
   const open=$('dialog[open]'),mobile=matchMedia('(max-width: 900px)').matches;
   const candidates=$$('video').filter(v=>v._inView&&!v._userPaused&&!v.closest('dialog:not([open])')&&(!open||open.contains(v))).sort((a,b)=>(b._ratio||0)-(a._ratio||0));
-  const allowed=!motionPaused&&!document.hidden&&!navigator.connection?.saveData?candidates.slice(0,mobile?1:2):[];
+  const allowed=!motionPaused&&!document.hidden&&!navigator.connection?.saveData?candidates.slice(0,mobile?2:3):[];
   $$('video').forEach(video=>{
-    if(allowed.includes(video)){ensureVideo(video);if(video.paused)video.play().catch(()=>updateVideoControl(video));}
-    else if(!video.paused)video.pause();
+    if(allowed.includes(video)){
+      ensureVideo(video);
+      if(video.paused){
+        const attempt=()=>video.play().then(()=>updateVideoControl(video)).catch(()=>updateVideoControl(video));
+        if(video.readyState>=2)attempt();else video.addEventListener('canplay',attempt,{once:true});
+      }
+    } else if(!video.paused) video.pause();
   });
 }
 const filmObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>{
   for(const entry of entries){entry.target._inView=entry.isIntersecting;entry.target._ratio=entry.intersectionRatio;}
   syncVideos();
 },{rootMargin:'180px 0px 180px 0px',threshold:[0,.05,.2,.5,.8,1]}):null;
-function hydrateFilms(root=document){$$('video[data-video]',root).forEach(video=>{if(video.dataset.bound)return;video.dataset.bound='true';video.addEventListener('play',()=>updateVideoControl(video));video.addEventListener('pause',()=>updateVideoControl(video));filmObserver?.observe(video);});}
+function hydrateFilms(root=document){$$('video[data-video]',root).forEach(video=>{if(video.dataset.bound)return;video.dataset.bound='true';ensureVideo(video);video.addEventListener('play',()=>updateVideoControl(video));video.addEventListener('pause',()=>updateVideoControl(video));video.addEventListener('loadeddata',syncVideos,{once:true});filmObserver?.observe(video);});}
 function applyMotion(){
   document.body.classList.toggle('motion-paused',motionPaused);
   syncVideos();observeReveals();
@@ -298,7 +324,20 @@ matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',event=>
 document.addEventListener('visibilitychange',()=>{if(document.hidden)$$('video').forEach(video=>video.pause());else applyMotion();});
 let scrollFrame=false;
 window.addEventListener('scroll',()=>{if(scrollFrame)return;scrollFrame=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;$('.scroll-progress')?.style.setProperty('--scroll',`${max>0?scrollY/max*100:0}%`);scrollFrame=false;});},{passive:true});
-const loader=$('#preloader');if(loader){if(readStore('fp-v5-loaded',false,true)||motionPaused)loader.classList.add('skip');else{writeStore('fp-v5-loaded',true,true);setTimeout(()=>loader.classList.add('done'),2250);}}
+try{history.scrollRestoration='manual';}catch{/* not supported */}
+window.addEventListener('pageshow',()=>{
+  const nav=performance.getEntriesByType?.('navigation')?.[0];
+  if(!location.hash&&nav?.type==='reload')requestAnimationFrame(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
+});
+const loader=$('#preloader');
+if(loader){
+  if(motionPaused)loader.classList.add('skip');
+  else{
+    const started=performance.now();
+    const finish=()=>setTimeout(()=>loader.classList.add('done'),Math.max(0,1650-(performance.now()-started)));
+    if(document.readyState==='complete')finish();else window.addEventListener('load',finish,{once:true});
+  }
+}
 document.documentElement.classList.add('js-motion');
 if($('#shopSearch'))$('#shopSearch').value=shopState.query;
 renderShop();renderCart();observeReveals();hydrateFilms();applyMotion();
