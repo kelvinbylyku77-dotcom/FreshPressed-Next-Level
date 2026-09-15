@@ -1231,3 +1231,152 @@ html, body { background: var(--cream); }
   }
   .footer::after { height: 4px; margin-inline: -22px; }
 }
+
+
+/* Pass 7: remove the extra menu card and give the shared header a cleaner premium retail treatment. */
+.menu-conversion { display: none !important; }
+
+/* Bump&Beyond-inspired hierarchy: one restrained offer ribbon over a clean, solid navigation bar.
+   Fresh Pressed colors/typography stay intact; no gradient pill treatment. */
+.announcement {
+  height: 34px;
+  color: var(--cream);
+  background: var(--forest);
+  border-bottom: 0;
+  box-shadow: none;
+}
+:root { --announcement-height: 34px; }
+.announcement .announcement-offer { color: var(--cream); }
+.announcement-group,
+.announcement-group span { color: rgba(248,246,235,.88); }
+.announcement-group strong {
+  color: var(--lime);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: .085em;
+}
+.announcement-group .brand-spark { color: #f0b447; }
+.announcement-track { animation-duration: 34s; }
+
+.header {
+  background: #f8f6eb;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: 0 1px 0 rgba(31,70,49,.12), 0 10px 28px rgba(31,70,49,.035);
+  border-bottom: 0;
+}
+.header::before { display: none; }
+.header-inner { position: relative; }
+.header .logo img { mix-blend-mode: normal; }
+.header .icon-button,
+.header .bag-button,
+.header .mobile-toggle {
+  transition: background .22s var(--ease), transform .22s var(--ease);
+}
+.header .icon-button:hover,
+.header .bag-button:hover,
+.header .mobile-toggle:hover { background: rgba(31,70,49,.055); }
+.header .cart-count {
+  box-shadow: 0 0 0 3px #f8f6eb;
+}
+.scroll-progress { height: 2px; background: var(--orange); }
+
+/* Make the existing menu CTA do the conversion work instead of inserting another card. */
+.categories .small-heading .text-link {
+  position: relative;
+  overflow: hidden;
+  min-height: 46px;
+  padding: 10px 14px 10px 18px;
+  gap: 14px;
+  border: 1px solid var(--forest);
+  border-radius: 999px;
+  background: var(--forest);
+  color: var(--cream);
+  box-shadow: 0 10px 24px rgba(31,70,49,.12);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  transition: transform .22s var(--ease), box-shadow .22s var(--ease), background .22s var(--ease);
+}
+.categories .small-heading .text-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,.16) 46%, transparent 72%);
+  transform: translateX(-130%);
+  animation: menu-cta-sheen 5.8s ease-in-out infinite 1.4s;
+  pointer-events: none;
+}
+.categories .small-heading .text-link .icon {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 50%;
+  color: var(--forest);
+  background: var(--lime);
+  stroke-width: 1.8;
+  transition: transform .22s var(--ease), background .22s var(--ease);
+}
+.categories .small-heading .text-link:hover {
+  color: var(--cream);
+  background: #29583d;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(31,70,49,.16);
+}
+.categories .small-heading .text-link:hover .icon { transform: translateX(2px); background: #e5ef9e; }
+@keyframes menu-cta-sheen {
+  0%, 68%, 100% { transform: translateX(-130%); }
+  82% { transform: translateX(130%); }
+}
+
+/* The existing lower full-menu CTA should also read as a primary shopping action. */
+.center-action .button.outline {
+  min-width: 230px;
+  background: var(--forest);
+  color: var(--cream);
+  border-color: var(--forest);
+  box-shadow: 0 10px 26px rgba(31,70,49,.12);
+}
+.center-action .button.outline:hover { background: #29583d; color: var(--cream); }
+
+@media (max-width: 600px) {
+  .announcement { height: 30px; }
+  :root { --announcement-height: 30px; }
+  .announcement-group {
+    min-width: 680px;
+    gap: 18px;
+    padding-inline: 18px;
+    font-size: 9px;
+  }
+  .announcement-track { animation-duration: 28s; }
+
+  .header {
+    box-shadow: 0 1px 0 rgba(31,70,49,.12), 0 8px 20px rgba(31,70,49,.03);
+  }
+  .header-inner { padding-inline: 18px; }
+  .header .logo { width: min(52vw, 205px); }
+
+  .categories .small-heading {
+    align-items: center;
+    gap: 14px;
+  }
+  .categories .small-heading h2 { max-width: 180px; }
+  .categories .small-heading .text-link {
+    min-height: 42px;
+    padding: 7px 8px 7px 14px;
+    gap: 9px;
+    font-size: 10.5px;
+    box-shadow: 0 8px 18px rgba(31,70,49,.11);
+  }
+  .categories .small-heading .text-link .icon {
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .categories .small-heading .text-link::before { animation: none; }
+}
