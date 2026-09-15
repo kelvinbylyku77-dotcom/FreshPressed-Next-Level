@@ -1507,3 +1507,120 @@ html, body { background: var(--cream); }
 @media (prefers-reduced-motion: reduce) {
   .announcement-track { animation: none; transform: none; }
 }
+
+/* ========================================================================== */
+/* PASS 9 — mobile header reset only. Keep every other current site change.   */
+/* ========================================================================== */
+@media (max-width: 600px) {
+  :root { --header-height: 78px; }
+
+  .header {
+    height: var(--header-height) !important;
+    background: rgba(248,246,235,.98) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-bottom: 1px solid rgba(32,62,45,.12) !important;
+  }
+
+  .header-inner {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    display: grid !important;
+    grid-template-columns: 44px minmax(0,1fr) 92px !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 18px !important;
+  }
+
+  .mobile-toggle {
+    display: inline-flex !important;
+    justify-self: start !important;
+    width: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
+  }
+
+  .header .logo {
+    width: min(195px, 100%) !important;
+    max-width: 195px !important;
+    margin: 0 auto !important;
+    justify-self: center !important;
+    align-self: center !important;
+  }
+
+  .header .logo img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 58px !important;
+    object-fit: contain !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .header-actions {
+    width: 92px !important;
+    min-width: 92px !important;
+    justify-self: end !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 4px !important;
+    margin: 0 !important;
+  }
+
+  .header-actions .search-link {
+    display: inline-flex !important;
+    width: 40px !important;
+    height: 44px !important;
+    padding: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .header-actions .search-link .icon,
+  .bag-button > .icon {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .bag-button {
+    position: relative !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .bag-button .cart-count {
+    position: absolute !important;
+    top: -3px !important;
+    right: -6px !important;
+    min-width: 22px !important;
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+    line-height: 1 !important;
+    border: 2px solid var(--cream) !important;
+  }
+
+  .bag-label,
+  .visit-link,
+  .desktop-nav { display: none !important; }
+
+  .scroll-progress { bottom: -1px !important; }
+}
+
+@media (max-width: 370px) {
+  .header-inner {
+    grid-template-columns: 42px minmax(0,1fr) 86px !important;
+    padding-inline: 12px !important;
+    gap: 6px !important;
+  }
+  .header .logo { width: min(176px, 100%) !important; max-width: 176px !important; }
+  .header-actions { width: 86px !important; min-width: 86px !important; }
+}
