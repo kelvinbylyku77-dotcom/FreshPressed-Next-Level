@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f0e5" />
+  <title>Shop the Full Menu — FreshPressed</title>
+  <meta name="description" content="Shop the full FreshPressed menu: cold-pressed juices, smoothies, açaí bowls, toasts, shots, coffee, tea and cleanses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="shop-page">
+  <div class="announcement"><span>FRESHLY MADE IN CONNECTICUT</span><i></i><span>PICKUP + LOCAL DELIVERY</span><i></i><span>$12 DELIVERY MINIMUM</span></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="FreshPressed home"><img src="https://images.squarespace-cdn.com/content/v1/59b97405017db2ca29fa8e35/a529326e-8b91-4655-a55a-1b5863d30bb4/chelsey-designs_freshpressed_logo.jpg" alt="FreshPressed" /></a>
+    <nav class="desktop-nav"><a class="active" href="shop.html">Shop</a><a href="shop.html?cat=juice">Juices</a><a href="shop.html?cat=bowl">Açaí</a><a href="shop.html?cat=cleanse">Cleanses</a><a href="index.html#story">Our Story</a></nav>
+    <div class="header-actions"><button class="icon-btn" id="searchOpen" aria-label="Search">⌕</button><button class="cart-btn" id="cartOpen">Bag <span id="cartCount">0</span></button><button class="menu-btn" id="menuOpen" aria-label="Open menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="shop-hero section-shell">
+      <div><p class="eyebrow">THE FULL FRESHPRESSED MENU</p><h1>Find your<br><em>fresh favorite.</em></h1><p>Everything lives here — juices, smoothies, açaí bowls, toasts, shots, coffee, tea and cleanses.</p></div>
+      <div class="shop-hero-media"><img src="public/media/fruit-transition.jpg" alt="FreshPressed drink" /><img src="public/media/fruit-bowl.jpg" alt="Fresh fruit bowl" /></div>
+    </section>
+
+    <section class="shop-controls section-shell">
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="juice">Juices</button>
+        <button class="filter" data-filter="smoothie">Smoothies</button>
+        <button class="filter" data-filter="bowl">Açaí + Bowls</button>
+        <button class="filter" data-filter="food">Toasts</button>
+        <button class="filter" data-filter="shot">Shots</button>
+        <button class="filter" data-filter="coffee">Coffee + Tea</button>
+        <button class="filter" data-filter="cleanse">Cleanses</button>
+      </div>
+      <div class="shop-search"><input id="shopSearch" placeholder="Search the menu" /><span>⌕</span></div>
+    </section>
+
+    <section class="shop-catalog section-shell section-space-sm">
+      <div class="catalog-meta"><p><span id="productCount">0</span> menu items</p><p>Pickup + local delivery • $12 delivery minimum</p></div>
+      <div class="product-grid shop-grid" id="productGrid"></div>
+      <div class="allergy-note">Food allergy notice: menu items may contain peanuts, tree nuts, gluten, wheat, soy or dairy. Please confirm ingredients with FreshPressed when ordering if you have an allergy.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><a class="brand" href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/59b97405017db2ca29fa8e35/a529326e-8b91-4655-a55a-1b5863d30bb4/chelsey-designs_freshpressed_logo.jpg" alt="FreshPressed" /></a><p>Cold pressed juices, smoothies, bowls and more. Freshly made in Plantsville, Connecticut.</p></div>
+    <div><b>Shop</b><a href="shop.html?cat=juice">Juices</a><a href="shop.html?cat=smoothie">Smoothies</a><a href="shop.html?cat=bowl">Açaí Bowls</a><a href="shop.html?cat=shot">Shots</a></div>
+    <div><b>Visit</b><span>930 Meriden-Waterbury Turnpike</span><span>Plantsville, CT 06479</span><span>(860) 426-0342</span></div>
+    <div><b>Ordering</b><span>Pickup + local delivery</span><span>$12 delivery minimum</span><span>Cleanse pickup: order 2–3 hrs ahead</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><span>YOUR BAG</span><b>FreshPressed order</b></div><button data-close aria-label="Close">×</button></div>
+    <div class="fulfillment"><button class="fulfill active" data-fulfill="pickup">Pickup</button><button class="fulfill" data-fulfill="delivery">Delivery</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot"><div id="deliveryNotice" class="delivery-notice hidden"></div><div class="total-row"><span>Subtotal</span><b id="cartTotal">$0.00</b></div><button class="btn btn-dark full" id="checkout">Continue to checkout</button><small>Prototype checkout — Shopify connects here in production.</small></div>
+  </aside>
+  <aside class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="drawer-head"><div><span>SEARCH</span><b>What sounds good?</b></div><button data-close aria-label="Close">×</button></div>
+    <input id="searchInput" class="search-input" placeholder="Try “açaí”, “ginger” or “protein”" />
+    <div id="searchResults"></div>
+  </aside>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true"><button data-close aria-label="Close">×</button><nav><a href="index.html">Home</a><a href="shop.html">Shop all</a><a href="shop.html?cat=juice">Cold-Pressed Juices</a><a href="shop.html?cat=smoothie">Smoothies</a><a href="shop.html?cat=bowl">Açaí Bowls</a><a href="shop.html?cat=shot">Shots</a><a href="shop.html?cat=coffee">Coffee + Tea</a><a href="shop.html?cat=cleanse">Cleanses</a></nav></aside>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

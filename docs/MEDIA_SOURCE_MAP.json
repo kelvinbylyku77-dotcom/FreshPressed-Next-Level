@@ -1,0 +1,197 @@
+[
+  {
+    "original": "Beet drink(1).mov",
+    "optimized": "beet-drink.mp4",
+    "sha256": "78ea595fc3684bb8a79948db6b617be4225a18789255afb71013262d8db6bb3d"
+  },
+  {
+    "original": "Beet drink.mov",
+    "duplicate_of": "Beet drink(1).mov",
+    "optimized": "beet-drink.mp4",
+    "sha256": "78ea595fc3684bb8a79948db6b617be4225a18789255afb71013262d8db6bb3d"
+  },
+  {
+    "original": "Blue Drink.mov",
+    "optimized": "blue-drink.mp4",
+    "sha256": "896ce00bca0cb777e99ca76799bfd20388df3b652b53bb014da379903714ea42"
+  },
+  {
+    "original": "Bowl.mov",
+    "optimized": "bowl.mp4",
+    "sha256": "f73b054ac5671c828b30ffbb437485d81bb9693d19d9405c1032f4cb507935aa"
+  },
+  {
+    "original": "Build your own bowl.mov",
+    "optimized": "build-your-own-bowl.mp4",
+    "sha256": "0b1f963d0271f2362aa584ea2049d09e7571aede17e8dda16c18f29bc47475a4"
+  },
+  {
+    "original": "Coffee.mov",
+    "optimized": "coffee.mp4",
+    "sha256": "f5f567223a284eba0ecaee8c5d95cbb2329ddab0e5b36aee39811a66284ff4ff"
+  },
+  {
+    "original": "Espresso.mov",
+    "optimized": "espresso.mp4",
+    "sha256": "78d174fcc964990e148f9bfb11f081f6a436068fb925e115ee0bfb01dffce1e8"
+  },
+  {
+    "original": "FP Bowl.mov",
+    "optimized": "fp-bowl.mp4",
+    "sha256": "659e0a4690e68b1e14d9fb65fc65cbb5033d4445f8d5988e4e27fdf999f1e883"
+  },
+  {
+    "original": "Food Prep(1).mov",
+    "optimized": "food-prep.mp4",
+    "sha256": "a2e361c2dde4e27d0939277868df393665d11ad3ced3dc8e7acd1dc608f2e996"
+  },
+  {
+    "original": "Fresh Pressed Toast 2nd Shoot.mov",
+    "optimized": "fresh-pressed-toast-2nd-shoot.mp4",
+    "sha256": "ab2a967db7156038a9a9fc433245eda51c9194651f64304c68fd71585305de31"
+  },
+  {
+    "original": "Fruit Transition shoot #8(1).mov",
+    "optimized": "fruit-transition-shoot-8.mp4",
+    "sha256": "e1790a1a78abd61448b02ef692f42731f8a0f931ca254a60f6390ded21bb640a"
+  },
+  {
+    "original": "Immunity Shots(1).mov",
+    "optimized": "immunity-shots.mp4",
+    "sha256": "342728249c0171b8bd6a78572e0ccc63447c61210c5b5b624fdafe28dcd07582"
+  },
+  {
+    "original": "Layout 2026.mov",
+    "optimized": "layout-2026.mp4",
+    "sha256": "bf5d53a97a6ba708677960f103c4235de199aa0e8fab653c2108c0ae6dccdd47"
+  },
+  {
+    "original": "Mocha Press.mov",
+    "optimized": "mocha-press.mp4",
+    "sha256": "196c5249c9c897de520b8f03b61e5b19e67af290122843adf14ce09b41820172"
+  },
+  {
+    "original": "Protein shake (Fresh)(1).mov",
+    "optimized": "protein-shake-fresh.mp4",
+    "sha256": "b63fe16fb36fa98fd331fa13af6394ef47dd214c4e579564ff193bb90b0ca33b"
+  },
+  {
+    "original": "Red Smoothie Shoot #3(1).mov",
+    "optimized": "red-smoothie-shoot-3.mp4",
+    "sha256": "a064702d014ec20bcd6a3a66bf1c0716476e23285df73c1c566da8f4cf5e7b12"
+  },
+  {
+    "original": "Red Smoothie Shoot #3(2).mov",
+    "duplicate_of": "Red Smoothie Shoot #3(1).mov",
+    "optimized": "red-smoothie-shoot-3.mp4",
+    "sha256": "a064702d014ec20bcd6a3a66bf1c0716476e23285df73c1c566da8f4cf5e7b12"
+  },
+  {
+    "original": "Skit(1).mov",
+    "optimized": "skit.mp4",
+    "sha256": "5bd0ff36956640fce23c4c46a05075e2457b00ee5392c9fa0fd4d1a437ee4fc2"
+  },
+  {
+    "original": "Smoothie 2.mov",
+    "optimized": "smoothie-2.mp4",
+    "sha256": "35cd6f590a0cb2beea5a6a54945df79772e4181a1232ab0e3c3bca0d72c9b5f5"
+  },
+  {
+    "original": "Smoothie shoot #6(1).mov",
+    "optimized": "smoothie-shoot-6.mp4",
+    "sha256": "76e179ffeea530741702362716618d85465eea7f6607358870d7411112724ce8"
+  },
+  {
+    "original": "Smoothie.mov",
+    "optimized": "smoothie.mp4",
+    "sha256": "8d2e4d48040640ac196ce9deb963a2f3dc4117c9e007a684c1f265baf5738332"
+  },
+  {
+    "original": "Special Video(1).mov",
+    "optimized": "special-video.mp4",
+    "sha256": "7b0feb9ced2eb8c4d544782a8da71bf4d2485c2bddb2c21d81d31ee0843bdc06"
+  },
+  {
+    "original": "Sweet Protein.mov",
+    "optimized": "sweet-protein.mp4",
+    "sha256": "48d51064b5be844f71f65d5091be472f5ede305ec327f721e0c828880fac64bf"
+  },
+  {
+    "original": "Toast.mov",
+    "optimized": "toast.mp4",
+    "sha256": "88ef477d4d318fb75bc5a7492b6032ea18affc1f27169d26189ce2c6005ad396"
+  },
+  {
+    "original": "TropicalBowlFINAL(1).mp4",
+    "optimized": "tropicalbowlfinal.mp4",
+    "sha256": "992c08baa7fe69279c07a43182ccf7db50a9a52c2edaaa15af33f126f0a8e1f4"
+  },
+  {
+    "original": "Vizi Media _ Demo video V2(1).mp4",
+    "optimized": "vizi-media-demo-video-v2.mp4",
+    "sha256": "9d968275b5e6404f6ceb30527c5ca560d06481bbb3e910d0d523a18bb71784dd"
+  },
+  {
+    "original": "Yellow Drink.mov",
+    "optimized": "yellow-drink.mp4",
+    "sha256": "389c02bda14e99a77bee5071ee1c7008d1721c7670789968d599933adcab361d"
+  },
+  {
+    "original": "acai Bowl 30 fps(1).mov",
+    "optimized": "acai-bowl-30-fps.mp4",
+    "sha256": "bea3afa2ebe322ed7cbeb9e000544ecfaa5cffa53576b8d66e21f06ff2fb5339"
+  },
+  {
+    "original": "acai Bowl 30 fps(2).mov",
+    "duplicate_of": "acai Bowl 30 fps(1).mov",
+    "optimized": "acai-bowl-30-fps.mp4",
+    "sha256": "bea3afa2ebe322ed7cbeb9e000544ecfaa5cffa53576b8d66e21f06ff2fb5339"
+  },
+  {
+    "original": "apple acai bowl(1).mov",
+    "optimized": "apple-acai-bowl.mp4",
+    "sha256": "563c15456f46877ca98d00900efe68845b43ba4b3c6b79dc7db8b1fd274b76b6"
+  },
+  {
+    "original": "apple acai bowl(2).mov",
+    "duplicate_of": "apple acai bowl(1).mov",
+    "optimized": "apple-acai-bowl.mp4",
+    "sha256": "563c15456f46877ca98d00900efe68845b43ba4b3c6b79dc7db8b1fd274b76b6"
+  },
+  {
+    "original": "build your own smoothie.mov",
+    "optimized": "build-your-own-smoothie.mp4",
+    "sha256": "1c5485443b86e841d87e087fa15f63cc7473a90132f894e30c86b591757865e2"
+  },
+  {
+    "original": "compilation.mov",
+    "optimized": "compilation.mp4",
+    "sha256": "5bfbbbef7b7b044d4b74f48b39d0f8498a58338c957740c65410ff7f9d4d4b08"
+  },
+  {
+    "original": "green drink 30fps.mov",
+    "optimized": "green-drink-30fps.mp4",
+    "sha256": "9acd9d5fbcf8ceab78bba77994839424ad8882b8dfa2f448b0769cef8bf0ef11"
+  },
+  {
+    "original": "shake(1).mov",
+    "optimized": "shake.mp4",
+    "sha256": "02d25d2f4ca797a839ab2e7a15c2e6136df209e019e8ed7e6bb1eca257a1d62f"
+  },
+  {
+    "original": "shake(2).mov",
+    "duplicate_of": "shake(1).mov",
+    "optimized": "shake.mp4",
+    "sha256": "02d25d2f4ca797a839ab2e7a15c2e6136df209e019e8ed7e6bb1eca257a1d62f"
+  },
+  {
+    "original": "tennis(1).mov",
+    "optimized": "tennis.mp4",
+    "sha256": "44e2f776380313badeb9409831407a7b443a1790bec4bb14b522f401dba831d9"
+  },
+  {
+    "original": "trisport(1).mov",
+    "optimized": "trisport.mp4",
+    "sha256": "8e1a4ad2d935878b41748deac06331b2f97eb2bba29098859647d3e48450d398"
+  }
+]

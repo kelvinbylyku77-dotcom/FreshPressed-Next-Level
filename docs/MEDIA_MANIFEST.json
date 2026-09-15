@@ -1,0 +1,1424 @@
+{
+  "revision": "2026-09-14",
+  "notes": "Complete inventory of supplied and selected official media. Unused assets are retained, not preloaded. Category images are labeled in product details.",
+  "assets": [
+    {
+      "filename": "site/public/media/DSC00368.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC00368 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 587792
+    },
+    {
+      "filename": "site/public/media/DSC02652.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC02652 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 406863
+    },
+    {
+      "filename": "site/public/media/DSC04243(1).jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC04243(1) still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 731867
+    },
+    {
+      "filename": "site/public/media/DSC04268(1).jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC04268(1) still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 626462
+    },
+    {
+      "filename": "site/public/media/DSC04305(1).jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC04305(1) still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 648192
+    },
+    {
+      "filename": "site/public/media/DSC09923.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "DSC09923 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 982457
+    },
+    {
+      "filename": "site/public/media/acai-bowl-30-fps.mp4",
+      "source": "Supplied media: acai Bowl 30 fps(1).mov, acai Bowl 30 fps(2).mov",
+      "original_files": [
+        "acai Bowl 30 fps(1).mov",
+        "acai Bowl 30 fps(2).mov"
+      ],
+      "shows": "acai bowl 30 fps video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 2700174
+    },
+    {
+      "filename": "site/public/media/acai.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "acai still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 165124
+    },
+    {
+      "filename": "site/public/media/apple-acai-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "apple acai 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 122094
+    },
+    {
+      "filename": "site/public/media/apple-acai-bowl.mp4",
+      "source": "Supplied media: apple acai bowl(1).mov, apple acai bowl(2).mov",
+      "original_files": [
+        "apple acai bowl(1).mov",
+        "apple acai bowl(2).mov"
+      ],
+      "shows": "apple acai bowl video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 2465996
+    },
+    {
+      "filename": "site/public/media/apple-acai.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "apple acai still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Nutty Delight Bowl"
+      ],
+      "bytes": 181823
+    },
+    {
+      "filename": "site/public/media/beet-drink.mp4",
+      "source": "Supplied media: Beet drink(1).mov, Beet drink.mov",
+      "original_files": [
+        "Beet drink(1).mov",
+        "Beet drink.mov"
+      ],
+      "shows": "beet drink video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 740378
+    },
+    {
+      "filename": "site/public/media/beet.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "beet still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 146380
+    },
+    {
+      "filename": "site/public/media/berry-ingredients.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_ed253598d7d6444e9be601968efb91f5~mv2.png",
+      "original_files": [],
+      "shows": "berry ingredients still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 202408
+    },
+    {
+      "filename": "site/public/media/blue-drink.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "blue drink still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 89274
+    },
+    {
+      "filename": "site/public/media/blue-drink.mp4",
+      "source": "Supplied media: Blue Drink.mov",
+      "original_files": [
+        "Blue Drink.mov"
+      ],
+      "shows": "blue drink video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1188607
+    },
+    {
+      "filename": "site/public/media/blue-fusion.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_df6dd158f36c412693136369ee8ad1f3~mv2.png",
+      "original_files": [],
+      "shows": "blue fusion still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Blue Fusion",
+        "shop.html static media"
+      ],
+      "bytes": 45510
+    },
+    {
+      "filename": "site/public/media/bowl-alt.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "bowl alt still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 406863
+    },
+    {
+      "filename": "site/public/media/bowl-cream.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "bowl cream still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 587792
+    },
+    {
+      "filename": "site/public/media/bowl-cream.webp",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "bowl cream still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 100670
+    },
+    {
+      "filename": "site/public/media/bowl.mp4",
+      "source": "Supplied media: Bowl.mov",
+      "original_files": [
+        "Bowl.mov"
+      ],
+      "shows": "bowl video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1151913
+    },
+    {
+      "filename": "site/public/media/build-bowl.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "build bowl still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 46596
+    },
+    {
+      "filename": "site/public/media/build-smoothie.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "build smoothie still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 129766
+    },
+    {
+      "filename": "site/public/media/build-your-own-bowl.mp4",
+      "source": "Supplied media: Build your own bowl.mov",
+      "original_files": [
+        "Build your own bowl.mov"
+      ],
+      "shows": "build your own bowl video",
+      "used_in": [
+        "bowl builder video"
+      ],
+      "bytes": 1156469
+    },
+    {
+      "filename": "site/public/media/build-your-own-smoothie.mp4",
+      "source": "Supplied media: build your own smoothie.mov",
+      "original_files": [
+        "build your own smoothie.mov"
+      ],
+      "shows": "build your own smoothie video",
+      "used_in": [
+        "smoothie builder video"
+      ],
+      "bytes": 2874170
+    },
+    {
+      "filename": "site/public/media/citrus-breeze.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_ef127408b007454eaf9edd96e51f0362~mv2.png",
+      "original_files": [],
+      "shows": "citrus breeze still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Citrus Breeze",
+        "Catalog/detail/cart: Create Your Own Juices (category image)",
+        "Catalog/detail/cart: Evergreen (category image)",
+        "Catalog/detail/cart: Fresh Breeze (category image)",
+        "Catalog/detail/cart: Golden Glow (category image)",
+        "Catalog/detail/cart: Immunity Juice (category image)",
+        "Catalog/detail/cart: Refresher (category image)",
+        "Catalog/detail/cart: Sunset Detox (category image)",
+        "Catalog/detail/cart: Whole Greens (category image)",
+        "index.html static media",
+        "shop.html static media"
+      ],
+      "bytes": 42940
+    },
+    {
+      "filename": "site/public/media/citrus-ingredients.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_331f97387109405faefda2fc45f1f773~mv2.png",
+      "original_files": [],
+      "shows": "citrus ingredients still / supplied filename",
+      "used_in": [
+        "index.html static media",
+        "shop.html static media"
+      ],
+      "bytes": 145172
+    },
+    {
+      "filename": "site/public/media/coffee-brand.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "coffee brand still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 648192
+    },
+    {
+      "filename": "site/public/media/coffee.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "coffee still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Cappuccino (category image)",
+        "Catalog/detail/cart: Chai Latte (category image)",
+        "Catalog/detail/cart: Cold Brew (category image)",
+        "Catalog/detail/cart: Hot Cocoa (category image)",
+        "Catalog/detail/cart: Hot Coffee (category image)",
+        "Catalog/detail/cart: Hot Tea (category image)",
+        "Catalog/detail/cart: Iced Chai Latte (category image)",
+        "Catalog/detail/cart: Iced Coffee (category image)",
+        "Catalog/detail/cart: Iced Latte (category image)",
+        "Catalog/detail/cart: Iced Tea (category image)",
+        "Catalog/detail/cart: Latte (category image)",
+        "Catalog/detail/cart: Matcha Latte (category image)",
+        "index.html static media"
+      ],
+      "bytes": 68618
+    },
+    {
+      "filename": "site/public/media/coffee.mp4",
+      "source": "Supplied media: Coffee.mov",
+      "original_files": [
+        "Coffee.mov"
+      ],
+      "shows": "coffee video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 426096
+    },
+    {
+      "filename": "site/public/media/compilation.mp4",
+      "source": "Supplied media: compilation.mov",
+      "original_files": [
+        "compilation.mov"
+      ],
+      "shows": "compilation video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 3328300
+    },
+    {
+      "filename": "site/public/media/dragon-bliss.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_c83a230ae0284304aa2b477556870717~mv2.png",
+      "original_files": [],
+      "shows": "dragon bliss still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Build Your Own Smoothie (category image)",
+        "Catalog/detail/cart: Dragon Bliss",
+        "index.html static media"
+      ],
+      "bytes": 61054
+    },
+    {
+      "filename": "site/public/media/espresso.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "espresso still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 64692
+    },
+    {
+      "filename": "site/public/media/espresso.mp4",
+      "source": "Supplied media: Espresso.mov",
+      "original_files": [
+        "Espresso.mov"
+      ],
+      "shows": "espresso video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 719729
+    },
+    {
+      "filename": "site/public/media/food-prep-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "food prep 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 49835
+    },
+    {
+      "filename": "site/public/media/food-prep.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "food prep still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 44922
+    },
+    {
+      "filename": "site/public/media/food-prep.mp4",
+      "source": "Supplied media: Food Prep(1).mov",
+      "original_files": [
+        "Food Prep(1).mov"
+      ],
+      "shows": "Fresh ingredient preparation",
+      "used_in": [
+        "Story video",
+        "index.html static media"
+      ],
+      "bytes": 757162
+    },
+    {
+      "filename": "site/public/media/fp-bowl.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "fp bowl still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 71182
+    },
+    {
+      "filename": "site/public/media/fp-bowl.mp4",
+      "source": "Supplied media: FP Bowl.mov",
+      "original_files": [
+        "FP Bowl.mov"
+      ],
+      "shows": "fp bowl video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 837652
+    },
+    {
+      "filename": "site/public/media/fresh-pressed-toast-2nd-shoot.mp4",
+      "source": "Supplied media: Fresh Pressed Toast 2nd Shoot.mov",
+      "original_files": [
+        "Fresh Pressed Toast 2nd Shoot.mov"
+      ],
+      "shows": "fresh pressed toast 2nd shoot video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 575749
+    },
+    {
+      "filename": "site/public/media/freshpressed-official.svg",
+      "source": "https://www.freshpressed-ct.com/",
+      "original_files": [],
+      "shows": "Official green/orange wordmark; original vector paths, colors and proportions",
+      "used_in": [
+        "Header, mobile header, footer, loader, popup and favicon",
+        "index.html static media",
+        "shop.html static media"
+      ],
+      "bytes": 10375
+    },
+    {
+      "filename": "site/public/media/fruit-bowl-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "fruit bowl 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 626462
+    },
+    {
+      "filename": "site/public/media/fruit-bowl-2.webp",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "fruit bowl 2 still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Create Your Own Bowl",
+        "Catalog/detail/cart: FP Yogurt Bowl (category image)",
+        "Catalog/detail/cart: Healthy Bowl (category image)",
+        "Catalog/detail/cart: Tropical Bowl",
+        "index.html static media"
+      ],
+      "bytes": 96052
+    },
+    {
+      "filename": "site/public/media/fruit-bowl.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "fruit bowl still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 159041
+    },
+    {
+      "filename": "site/public/media/fruit-transition-shoot-8.mp4",
+      "source": "Supplied media: Fruit Transition shoot #8(1).mov",
+      "original_files": [
+        "Fruit Transition shoot #8(1).mov"
+      ],
+      "shows": "fruit transition shoot 8 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 824514
+    },
+    {
+      "filename": "site/public/media/fruit-transition.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "fruit transition still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 55025
+    },
+    {
+      "filename": "site/public/media/green-drink-30fps.mp4",
+      "source": "Supplied media: green drink 30fps.mov",
+      "original_files": [
+        "green drink 30fps.mov"
+      ],
+      "shows": "green drink 30fps video",
+      "used_in": [
+        "juice builder video"
+      ],
+      "bytes": 1892133
+    },
+    {
+      "filename": "site/public/media/green-drink.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "green drink still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: 1 Day Cleanse (category image)",
+        "Catalog/detail/cart: 2 Day Cleanse (category image)",
+        "Catalog/detail/cart: 3 Day Cleanse (category image)"
+      ],
+      "bytes": 94545
+    },
+    {
+      "filename": "site/public/media/green-smoothie-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "green smoothie 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 731867
+    },
+    {
+      "filename": "site/public/media/green-smoothie-2.webp",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "green smoothie 2 still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Green Machine"
+      ],
+      "bytes": 114276
+    },
+    {
+      "filename": "site/public/media/green-smoothie.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "green smoothie still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 197833
+    },
+    {
+      "filename": "site/public/media/heart-beet.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_d8c0412ada534319a9c5b88fcfe60031~mv2.png",
+      "original_files": [],
+      "shows": "heart beet still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Heart Beet",
+        "index.html static media"
+      ],
+      "bytes": 50810
+    },
+    {
+      "filename": "site/public/media/immunity-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "immunity 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 76961
+    },
+    {
+      "filename": "site/public/media/immunity-shots.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "immunity shots still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 76181
+    },
+    {
+      "filename": "site/public/media/immunity-shots.mp4",
+      "source": "Supplied media: Immunity Shots(1).mov",
+      "original_files": [
+        "Immunity Shots(1).mov"
+      ],
+      "shows": "immunity shots video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 507010
+    },
+    {
+      "filename": "site/public/media/layout-2026.mp4",
+      "source": "Supplied media: Layout 2026.mov",
+      "original_files": [
+        "Layout 2026.mov"
+      ],
+      "shows": "layout 2026 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 524322
+    },
+    {
+      "filename": "site/public/media/logo.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "logo still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 124155
+    },
+    {
+      "filename": "site/public/media/mocha-press.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "mocha press still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 50159
+    },
+    {
+      "filename": "site/public/media/mocha-press.mp4",
+      "source": "Supplied media: Mocha Press.mov",
+      "original_files": [
+        "Mocha Press.mov"
+      ],
+      "shows": "mocha press video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 465140
+    },
+    {
+      "filename": "site/public/media/mocha.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_ea00821034ee4136a743def51a2c0ba5~mv2.png",
+      "original_files": [],
+      "shows": "mocha still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Mocha Press"
+      ],
+      "bytes": 64968
+    },
+    {
+      "filename": "site/public/media/official-smoothie-pour.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_f08d56988f7e4850bceb454a98dd8cc2~mv2.jpg",
+      "original_files": [],
+      "shows": "Smoothie preparation in store; representative category image",
+      "used_in": [
+        "Strawberry Banana, Tropical Press and Mango Fresh cards/details",
+        "Catalog/detail/cart: Mango Fresh (category image)",
+        "Catalog/detail/cart: Strawberry Banana (category image)",
+        "Catalog/detail/cart: Tropical Press (category image)"
+      ],
+      "bytes": 48594
+    },
+    {
+      "filename": "site/public/media/official-store-exterior.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_db66601ec6894cba84594cdb9c4efae5~mv2.jpg",
+      "original_files": [],
+      "shows": "Plantsville storefront and parking",
+      "used_in": [
+        "Offset location-section photograph",
+        "index.html static media"
+      ],
+      "bytes": 197686
+    },
+    {
+      "filename": "site/public/media/official-tropical-bowl.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_7118b48f365648afb91feb86878136f6~mv2.jpg",
+      "original_files": [],
+      "shows": "Fresh Pressed bowl with fruit and granola",
+      "used_in": [
+        "Small circular supporting image in the a\u00e7a\u00ed feature",
+        "index.html static media"
+      ],
+      "bytes": 131728
+    },
+    {
+      "filename": "site/public/media/posters/acai-bowl-30-fps.jpg",
+      "source": "Supplied media: acai Bowl 30 fps(1).mov, acai Bowl 30 fps(2).mov",
+      "original_files": [
+        "acai Bowl 30 fps(1).mov",
+        "acai Bowl 30 fps(2).mov"
+      ],
+      "shows": "acai bowl 30 fps poster frame",
+      "used_in": [
+        "Catalog/detail/cart: FP Bowl"
+      ],
+      "bytes": 46369
+    },
+    {
+      "filename": "site/public/media/posters/apple-acai-bowl.jpg",
+      "source": "Supplied media: apple acai bowl(1).mov, apple acai bowl(2).mov",
+      "original_files": [
+        "apple acai bowl(1).mov",
+        "apple acai bowl(2).mov"
+      ],
+      "shows": "apple acai bowl poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 42484
+    },
+    {
+      "filename": "site/public/media/posters/beet-drink.jpg",
+      "source": "Supplied media: Beet drink(1).mov, Beet drink.mov",
+      "original_files": [
+        "Beet drink(1).mov",
+        "Beet drink.mov"
+      ],
+      "shows": "beet drink poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 49630
+    },
+    {
+      "filename": "site/public/media/posters/blue-drink.jpg",
+      "source": "Supplied media: Blue Drink.mov",
+      "original_files": [
+        "Blue Drink.mov"
+      ],
+      "shows": "blue drink poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 44445
+    },
+    {
+      "filename": "site/public/media/posters/bowl.jpg",
+      "source": "Supplied media: Bowl.mov",
+      "original_files": [
+        "Bowl.mov"
+      ],
+      "shows": "bowl poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 41871
+    },
+    {
+      "filename": "site/public/media/posters/build-your-own-bowl.jpg",
+      "source": "Supplied media: Build your own bowl.mov",
+      "original_files": [
+        "Build your own bowl.mov"
+      ],
+      "shows": "build your own bowl poster frame",
+      "used_in": [
+        "bowl builder poster"
+      ],
+      "bytes": 23690
+    },
+    {
+      "filename": "site/public/media/posters/build-your-own-smoothie.jpg",
+      "source": "Supplied media: build your own smoothie.mov",
+      "original_files": [
+        "build your own smoothie.mov"
+      ],
+      "shows": "build your own smoothie poster frame",
+      "used_in": [
+        "smoothie builder poster"
+      ],
+      "bytes": 35417
+    },
+    {
+      "filename": "site/public/media/posters/coffee.jpg",
+      "source": "Supplied media: Coffee.mov",
+      "original_files": [
+        "Coffee.mov"
+      ],
+      "shows": "coffee poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 20533
+    },
+    {
+      "filename": "site/public/media/posters/compilation.jpg",
+      "source": "Supplied media: compilation.mov",
+      "original_files": [
+        "compilation.mov"
+      ],
+      "shows": "compilation poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 36666
+    },
+    {
+      "filename": "site/public/media/posters/espresso.jpg",
+      "source": "Supplied media: Espresso.mov",
+      "original_files": [
+        "Espresso.mov"
+      ],
+      "shows": "espresso poster frame",
+      "used_in": [
+        "Catalog/detail/cart: Americano (category image)",
+        "Catalog/detail/cart: Espresso (category image)",
+        "Catalog/detail/cart: Macchiato (category image)"
+      ],
+      "bytes": 25356
+    },
+    {
+      "filename": "site/public/media/posters/food-prep.jpg",
+      "source": "Supplied media: Food Prep(1).mov",
+      "original_files": [
+        "Food Prep(1).mov"
+      ],
+      "shows": "food prep poster frame",
+      "used_in": [
+        "index.html static media"
+      ],
+      "bytes": 35007
+    },
+    {
+      "filename": "site/public/media/posters/fp-bowl.jpg",
+      "source": "Supplied media: FP Bowl.mov",
+      "original_files": [
+        "FP Bowl.mov"
+      ],
+      "shows": "fp bowl poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 25044
+    },
+    {
+      "filename": "site/public/media/posters/fresh-pressed-toast-2nd-shoot.jpg",
+      "source": "Supplied media: Fresh Pressed Toast 2nd Shoot.mov",
+      "original_files": [
+        "Fresh Pressed Toast 2nd Shoot.mov"
+      ],
+      "shows": "fresh pressed toast 2nd shoot poster frame",
+      "used_in": [
+        "Catalog/detail/cart: Avocado Toast",
+        "Catalog/detail/cart: Cucumber Hummus (category image)",
+        "Catalog/detail/cart: PB Banana (category image)",
+        "Catalog/detail/cart: Strawberry Nutella (category image)",
+        "index.html static media"
+      ],
+      "bytes": 31214
+    },
+    {
+      "filename": "site/public/media/posters/fruit-transition-shoot-8.jpg",
+      "source": "Supplied media: Fruit Transition shoot #8(1).mov",
+      "original_files": [
+        "Fruit Transition shoot #8(1).mov"
+      ],
+      "shows": "fruit transition shoot 8 poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 45188
+    },
+    {
+      "filename": "site/public/media/posters/green-drink-30fps.jpg",
+      "source": "Supplied media: green drink 30fps.mov",
+      "original_files": [
+        "green drink 30fps.mov"
+      ],
+      "shows": "green drink 30fps poster frame",
+      "used_in": [
+        "juice builder poster"
+      ],
+      "bytes": 25512
+    },
+    {
+      "filename": "site/public/media/posters/immunity-shots.jpg",
+      "source": "Supplied media: Immunity Shots(1).mov",
+      "original_files": [
+        "Immunity Shots(1).mov"
+      ],
+      "shows": "immunity shots poster frame",
+      "used_in": [
+        "Catalog/detail/cart: ACV Honey Lemon (category image)",
+        "Catalog/detail/cart: Ginger Lemon Cayenne (category image)",
+        "Catalog/detail/cart: Turmeric Apple (category image)",
+        "index.html static media"
+      ],
+      "bytes": 20317
+    },
+    {
+      "filename": "site/public/media/posters/layout-2026.jpg",
+      "source": "Supplied media: Layout 2026.mov",
+      "original_files": [
+        "Layout 2026.mov"
+      ],
+      "shows": "layout 2026 poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 79289
+    },
+    {
+      "filename": "site/public/media/posters/mocha-press.jpg",
+      "source": "Supplied media: Mocha Press.mov",
+      "original_files": [
+        "Mocha Press.mov"
+      ],
+      "shows": "mocha press poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 26172
+    },
+    {
+      "filename": "site/public/media/posters/protein-shake-fresh.jpg",
+      "source": "Supplied media: Protein shake (Fresh)(1).mov",
+      "original_files": [
+        "Protein shake (Fresh)(1).mov"
+      ],
+      "shows": "protein shake fresh poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 20487
+    },
+    {
+      "filename": "site/public/media/posters/red-smoothie-shoot-3.jpg",
+      "source": "Supplied media: Red Smoothie Shoot #3(1).mov, Red Smoothie Shoot #3(2).mov",
+      "original_files": [
+        "Red Smoothie Shoot #3(1).mov",
+        "Red Smoothie Shoot #3(2).mov"
+      ],
+      "shows": "red smoothie shoot 3 poster frame",
+      "used_in": [
+        "Catalog/detail/cart: Super Smoothie (category image)"
+      ],
+      "bytes": 26926
+    },
+    {
+      "filename": "site/public/media/posters/shake.jpg",
+      "source": "Supplied media: shake(1).mov, shake(2).mov",
+      "original_files": [
+        "shake(1).mov",
+        "shake(2).mov"
+      ],
+      "shows": "shake poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 19735
+    },
+    {
+      "filename": "site/public/media/posters/skit.jpg",
+      "source": "Supplied media: Skit(1).mov",
+      "original_files": [
+        "Skit(1).mov"
+      ],
+      "shows": "skit poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 24348
+    },
+    {
+      "filename": "site/public/media/posters/smoothie-2.jpg",
+      "source": "Supplied media: Smoothie 2.mov",
+      "original_files": [
+        "Smoothie 2.mov"
+      ],
+      "shows": "smoothie 2 poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 34515
+    },
+    {
+      "filename": "site/public/media/posters/smoothie-shoot-6.jpg",
+      "source": "Supplied media: Smoothie shoot #6(1).mov",
+      "original_files": [
+        "Smoothie shoot #6(1).mov"
+      ],
+      "shows": "smoothie shoot 6 poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 29384
+    },
+    {
+      "filename": "site/public/media/posters/smoothie.jpg",
+      "source": "Supplied media: Smoothie.mov",
+      "original_files": [
+        "Smoothie.mov"
+      ],
+      "shows": "smoothie poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 49152
+    },
+    {
+      "filename": "site/public/media/posters/special-video.jpg",
+      "source": "Supplied media: Special Video(1).mov",
+      "original_files": [
+        "Special Video(1).mov"
+      ],
+      "shows": "special video poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 28587
+    },
+    {
+      "filename": "site/public/media/posters/sweet-protein.jpg",
+      "source": "Supplied media: Sweet Protein.mov",
+      "original_files": [
+        "Sweet Protein.mov"
+      ],
+      "shows": "sweet protein poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 45074
+    },
+    {
+      "filename": "site/public/media/posters/tennis.jpg",
+      "source": "Supplied media: tennis(1).mov",
+      "original_files": [
+        "tennis(1).mov"
+      ],
+      "shows": "tennis poster frame",
+      "used_in": [
+        "index.html static media"
+      ],
+      "bytes": 18801
+    },
+    {
+      "filename": "site/public/media/posters/toast.jpg",
+      "source": "Supplied media: Toast.mov",
+      "original_files": [
+        "Toast.mov"
+      ],
+      "shows": "toast poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 34219
+    },
+    {
+      "filename": "site/public/media/posters/trisport.jpg",
+      "source": "Supplied media: trisport(1).mov",
+      "original_files": [
+        "trisport(1).mov"
+      ],
+      "shows": "trisport poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 43139
+    },
+    {
+      "filename": "site/public/media/posters/tropicalbowlfinal.jpg",
+      "source": "Supplied media: TropicalBowlFINAL(1).mp4",
+      "original_files": [
+        "TropicalBowlFINAL(1).mp4"
+      ],
+      "shows": "tropicalbowlfinal poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 41760
+    },
+    {
+      "filename": "site/public/media/posters/vizi-media-demo-video-v2.jpg",
+      "source": "Supplied media: Vizi Media _ Demo video V2(1).mp4",
+      "original_files": [
+        "Vizi Media _ Demo video V2(1).mp4"
+      ],
+      "shows": "vizi media demo video v2 poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 33332
+    },
+    {
+      "filename": "site/public/media/posters/yellow-drink.jpg",
+      "source": "Supplied media: Yellow Drink.mov",
+      "original_files": [
+        "Yellow Drink.mov"
+      ],
+      "shows": "yellow drink poster frame",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 5873
+    },
+    {
+      "filename": "site/public/media/protein-shake-fresh.mp4",
+      "source": "Supplied media: Protein shake (Fresh)(1).mov",
+      "original_files": [
+        "Protein shake (Fresh)(1).mov"
+      ],
+      "shows": "protein shake fresh video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 202124
+    },
+    {
+      "filename": "site/public/media/protein.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "protein still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Protein Pro (category image)",
+        "index.html static media"
+      ],
+      "bytes": 92047
+    },
+    {
+      "filename": "site/public/media/red-smoothie-shoot-3.mp4",
+      "source": "Supplied media: Red Smoothie Shoot #3(1).mov, Red Smoothie Shoot #3(2).mov",
+      "original_files": [
+        "Red Smoothie Shoot #3(1).mov",
+        "Red Smoothie Shoot #3(2).mov"
+      ],
+      "shows": "red smoothie shoot 3 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 260626
+    },
+    {
+      "filename": "site/public/media/red-smoothie.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "red smoothie still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 139695
+    },
+    {
+      "filename": "site/public/media/shake.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "shake still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 127028
+    },
+    {
+      "filename": "site/public/media/shake.mp4",
+      "source": "Supplied media: shake(1).mov, shake(2).mov",
+      "original_files": [
+        "shake(1).mov",
+        "shake(2).mov"
+      ],
+      "shows": "shake video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1348557
+    },
+    {
+      "filename": "site/public/media/skit.mp4",
+      "source": "Supplied media: Skit(1).mov",
+      "original_files": [
+        "Skit(1).mov"
+      ],
+      "shows": "skit video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1823508
+    },
+    {
+      "filename": "site/public/media/smoothie-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "smoothie 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 96026
+    },
+    {
+      "filename": "site/public/media/smoothie-2.mp4",
+      "source": "Supplied media: Smoothie 2.mov",
+      "original_files": [
+        "Smoothie 2.mov"
+      ],
+      "shows": "smoothie 2 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1643777
+    },
+    {
+      "filename": "site/public/media/smoothie-shoot-6.mp4",
+      "source": "Supplied media: Smoothie shoot #6(1).mov",
+      "original_files": [
+        "Smoothie shoot #6(1).mov"
+      ],
+      "shows": "smoothie shoot 6 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1360141
+    },
+    {
+      "filename": "site/public/media/smoothie.mp4",
+      "source": "Supplied media: Smoothie.mov",
+      "original_files": [
+        "Smoothie.mov"
+      ],
+      "shows": "smoothie video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 2415657
+    },
+    {
+      "filename": "site/public/media/special-video.mp4",
+      "source": "Supplied media: Special Video(1).mov",
+      "original_files": [
+        "Special Video(1).mov"
+      ],
+      "shows": "special video video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1623997
+    },
+    {
+      "filename": "site/public/media/store-interior.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "store interior still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 982457
+    },
+    {
+      "filename": "site/public/media/store-interior.webp",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "Fresh Pressed interior with orange seating and greenery",
+      "used_in": [
+        "Main location photograph",
+        "index.html static media"
+      ],
+      "bytes": 218476
+    },
+    {
+      "filename": "site/public/media/sweet-protein.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "sweet protein still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Sweet Protein"
+      ],
+      "bytes": 96196
+    },
+    {
+      "filename": "site/public/media/sweet-protein.mp4",
+      "source": "Supplied media: Sweet Protein.mov",
+      "original_files": [
+        "Sweet Protein.mov"
+      ],
+      "shows": "Sweet Protein preparation and finished drink",
+      "used_in": [
+        "Big Flavor / Good Energy video",
+        "index.html static media"
+      ],
+      "bytes": 1452716
+    },
+    {
+      "filename": "site/public/media/tennis.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "tennis still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 79693
+    },
+    {
+      "filename": "site/public/media/tennis.mp4",
+      "source": "Supplied media: tennis(1).mov",
+      "original_files": [
+        "tennis(1).mov"
+      ],
+      "shows": "Tennis and Fresh Pressed lifestyle footage",
+      "used_in": [
+        "Small story inset",
+        "index.html static media"
+      ],
+      "bytes": 1616865
+    },
+    {
+      "filename": "site/public/media/toast-2.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "toast 2 still / supplied filename",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 39600
+    },
+    {
+      "filename": "site/public/media/toast.mp4",
+      "source": "Supplied media: Toast.mov",
+      "original_files": [
+        "Toast.mov"
+      ],
+      "shows": "toast video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 867873
+    },
+    {
+      "filename": "site/public/media/trisport.mp4",
+      "source": "Supplied media: trisport(1).mov",
+      "original_files": [
+        "trisport(1).mov"
+      ],
+      "shows": "trisport video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 2715746
+    },
+    {
+      "filename": "site/public/media/tropical-bowl.jpg",
+      "source": "Supplied Fresh Pressed project; local optimized derivative where applicable",
+      "original_files": [],
+      "shows": "tropical bowl still / supplied filename",
+      "used_in": [
+        "index.html static media"
+      ],
+      "bytes": 72985
+    },
+    {
+      "filename": "site/public/media/tropicalbowlfinal.mp4",
+      "source": "Supplied media: TropicalBowlFINAL(1).mp4",
+      "original_files": [
+        "TropicalBowlFINAL(1).mp4"
+      ],
+      "shows": "Tropical Bowl preparation",
+      "used_in": [
+        "Dominant a\u00e7a\u00ed section video",
+        "index.html static media"
+      ],
+      "bytes": 768023
+    },
+    {
+      "filename": "site/public/media/very-berry.webp",
+      "source": "https://static.wixstatic.com/media/0eb726_85e87933e4fa42e38573617c25573f06~mv2.png",
+      "original_files": [],
+      "shows": "very berry still / supplied filename",
+      "used_in": [
+        "Catalog/detail/cart: Very Berry",
+        "index.html static media"
+      ],
+      "bytes": 64532
+    },
+    {
+      "filename": "site/public/media/vizi-media-demo-video-v2.mp4",
+      "source": "Supplied media: Vizi Media _ Demo video V2(1).mp4",
+      "original_files": [
+        "Vizi Media _ Demo video V2(1).mp4"
+      ],
+      "shows": "vizi media demo video v2 video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1177308
+    },
+    {
+      "filename": "site/public/media/yellow-drink.mp4",
+      "source": "Supplied media: Yellow Drink.mov",
+      "original_files": [
+        "Yellow Drink.mov"
+      ],
+      "shows": "yellow drink video",
+      "used_in": [
+        "Retained for future use; not referenced by the current storefront"
+      ],
+      "bytes": 1677203
+    }
+  ]
+}

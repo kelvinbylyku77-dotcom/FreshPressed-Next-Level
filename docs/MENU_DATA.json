@@ -1,0 +1,399 @@
+{
+  "source": "https://www.freshpressed-ct.com/menu",
+  "delivery_minimum": 12,
+  "categories": [
+    {
+      "name": "Smoothies",
+      "size": "20oz",
+      "items": [
+        {
+          "name": "Strawberry Banana",
+          "price": 9.95,
+          "ingredients": [
+            "Almond Milk",
+            "Strawberry",
+            "Banana",
+            "Date"
+          ]
+        },
+        {
+          "name": "Very Berry",
+          "price": 9.95,
+          "ingredients": [
+            "Strawberry",
+            "Blackberry",
+            "Blueberry",
+            "Pineapple",
+            "Orange Juice"
+          ]
+        },
+        {
+          "name": "Blue Fusion",
+          "price": 9.95,
+          "ingredients": [
+            "Coconut Milk",
+            "Mango",
+            "Peach",
+            "Passion Fruit",
+            "Date",
+            "Blue Spirulina"
+          ]
+        },
+        {
+          "name": "Tropical Press",
+          "price": 9.95,
+          "ingredients": [
+            "Passion Fruit",
+            "Mango",
+            "Banana",
+            "Honey"
+          ]
+        },
+        {
+          "name": "Green Machine",
+          "price": 9.95,
+          "ingredients": [
+            "Spinach",
+            "Kale",
+            "Banana",
+            "Apple Juice",
+            "Pineapple"
+          ]
+        },
+        {
+          "name": "Mango Fresh",
+          "price": 9.95,
+          "ingredients": [
+            "Mango",
+            "Strawberry",
+            "Mango Sherbet",
+            "Apple Juice"
+          ]
+        },
+        {
+          "name": "Super Smoothie",
+          "price": 9.95,
+          "ingredients": [
+            "Açaí",
+            "Banana",
+            "Strawberry",
+            "Blueberry",
+            "Peanut Butter",
+            "Almond Milk",
+            "Chia Seeds"
+          ]
+        },
+        {
+          "name": "Protein Pro",
+          "price": 11.95,
+          "ingredients": [
+            "Organic Cacao Nibs",
+            "Banana",
+            "Peanut Butter",
+            "Whey Protein",
+            "Organic Agave",
+            "Almond Milk"
+          ]
+        },
+        {
+          "name": "Sweet Protein",
+          "price": 11.95,
+          "ingredients": [
+            "Chocolate Plant Protein",
+            "Dates",
+            "Banana",
+            "Walnuts",
+            "Almond Milk",
+            "Cacao Nibs"
+          ]
+        },
+        {
+          "name": "Mocha Press",
+          "price": 9.95,
+          "ingredients": [
+            "Almond Milk",
+            "Espresso",
+            "Cacao",
+            "Banana",
+            "Peanut Butter",
+            "Vanilla",
+            "Coconut Oil",
+            "Dates"
+          ]
+        },
+        {
+          "name": "Dragon Bliss",
+          "price": 9.95,
+          "ingredients": [
+            "Dragon Fruit",
+            "Passion Fruit",
+            "Mango",
+            "Banana",
+            "Honey"
+          ]
+        }
+      ],
+      "add_ons": {
+        "price": 2,
+        "items": [
+          "Plant Based Protein",
+          "Chia Seeds",
+          "Hemp Seeds",
+          "Flax Seeds",
+          "Blue Spirulina",
+          "Matcha Powder",
+          "Collagen Powder",
+          "MultiVitamin Powder",
+          "Turmeric Powder"
+        ]
+      }
+    },
+    {
+      "name": "Cold Pressed Juice",
+      "size": "16oz",
+      "default_price": 9.95,
+      "items": [
+        {
+          "name": "Whole Greens",
+          "ingredients": [
+            "Kale",
+            "Green Apple",
+            "Cucumber",
+            "Lemon"
+          ]
+        },
+        {
+          "name": "Immunity Juice",
+          "ingredients": [
+            "Carrot",
+            "Orange",
+            "Ginger",
+            "Turmeric"
+          ]
+        },
+        {
+          "name": "Heart Beet",
+          "ingredients": [
+            "Beets",
+            "Carrots",
+            "Apple",
+            "Orange",
+            "Lemon"
+          ]
+        },
+        {
+          "name": "Evergreen",
+          "ingredients": [
+            "Spinach",
+            "Kale",
+            "Celery",
+            "Cucumber",
+            "Apple"
+          ]
+        },
+        {
+          "name": "Refresher",
+          "ingredients": [
+            "Pineapple",
+            "Celery",
+            "Apple",
+            "Ginger"
+          ]
+        },
+        {
+          "name": "Sunset Detox",
+          "ingredients": [
+            "Carrot",
+            "Apple",
+            "Pineapple",
+            "Lemon",
+            "Ginger"
+          ]
+        },
+        {
+          "name": "Citrus Breeze",
+          "ingredients": [
+            "Orange",
+            "Grapefruit",
+            "Lemon",
+            "Lime"
+          ]
+        },
+        {
+          "name": "Golden Glow",
+          "ingredients": [
+            "Orange",
+            "Pineapple",
+            "Lemon",
+            "Ginger"
+          ]
+        },
+        {
+          "name": "Fresh Breeze",
+          "ingredients": [
+            "Pineapple",
+            "Apple",
+            "Cucumber",
+            "Kale",
+            "Lime"
+          ]
+        }
+      ],
+      "create_your_own": {
+        "2_items": 8.95,
+        "3_items": 9.95,
+        "4_items": 10.95,
+        "special_from": 11.95
+      }
+    },
+    {
+      "name": "Açaí Bowls",
+      "base": "Organic, Dairy-Free Açaí Berry Base",
+      "items": [
+        {
+          "name": "FP Bowl",
+          "price": 10.95,
+          "description": "Açaí topped with Granola, Banana, Strawberries, Blueberries, Sliced Almonds, Chia Seeds, and Honey"
+        },
+        {
+          "name": "Nutty Delight Bowl",
+          "price": 10.95,
+          "description": "Açaí topped with Granola, Banana, Green Apples, Coconut Flakes, Almond Slices, Nutella and Peanut Butter"
+        },
+        {
+          "name": "Tropical Bowl",
+          "price": 10.95,
+          "description": "Açaí topped with Granola, Kiwi, Pineapple, Strawberries, Blueberries, Raspberries and Honey"
+        },
+        {
+          "name": "Healthy Bowl",
+          "price": 11.95,
+          "description": "Açaí topped with Granola, Almond Butter, Strawberries, Pineapple, Flax Seed, Honey, Coconut Flakes"
+        },
+        {
+          "name": "FP Yogurt Bowl",
+          "price": 10.95,
+          "description": "Greek Yogurt topped with Strawberries, Blueberries, Kiwi, Goji Berries, Flax Seeds and Honey"
+        }
+      ],
+      "create_your_own": {
+        "base_and_granola": 4.95,
+        "additional_toppings_each": 2.0
+      }
+    },
+    {
+      "name": "Toasts",
+      "default_price": 4.95,
+      "served_on": "Organic Wheat Sprouted Toast",
+      "items": [
+        {
+          "name": "Avocado Toast",
+          "description": "Topped with Everything Bagel Seasoning"
+        },
+        {
+          "name": "Cucumber Hummus",
+          "description": "Red Pepper or Plain Hummus with Sliced Cucumbers, Olive Oil, Salt & Pepper"
+        },
+        {
+          "name": "PB Banana",
+          "description": "Peanut Butter, Banana, Honey & Chia Seeds"
+        },
+        {
+          "name": "Strawberry Nutella",
+          "description": "Nutella Spread, Fresh Strawberries, Coconut Flakes"
+        }
+      ]
+    },
+    {
+      "name": "Immunity Shots",
+      "size": "3oz",
+      "default_price": 4.99,
+      "items": [
+        {
+          "name": "Ginger Lemon Cayenne",
+          "ingredients": [
+            "Ginger",
+            "Lemon",
+            "Cayenne Pepper"
+          ]
+        },
+        {
+          "name": "ACV Honey Lemon",
+          "ingredients": [
+            "Apple Cider Vinegar",
+            "Honey",
+            "Lemon Juice"
+          ]
+        },
+        {
+          "name": "Turmeric Apple",
+          "ingredients": [
+            "Turmeric",
+            "Apple"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coffee & Tea",
+      "note": "Current site lists coffee/tea items and a price table that should be re-verified during Shopify implementation.",
+      "items": [
+        "Hot Coffee",
+        "Iced Coffee",
+        "Cold Brew",
+        "Espresso",
+        "Cappuccino",
+        "Latte",
+        "Iced Latte",
+        "Macchiato",
+        "Americano",
+        "Matcha Latte",
+        "Chai Latte",
+        "Iced Chai Latte",
+        "Hot Cocoa",
+        "Hot Tea",
+        "Iced Tea"
+      ],
+      "milk_upcharges": {
+        "12oz": 0.5,
+        "16oz": 1.0
+      },
+      "flavor_shots": {
+        "price": 0.5,
+        "items": [
+          "Mocha",
+          "Caramel",
+          "Vanilla",
+          "Hazelnut",
+          "Salted Caramel"
+        ]
+      }
+    },
+    {
+      "name": "FP Signature Cleanse",
+      "items": [
+        {
+          "name": "1 Day Cleanse",
+          "price": 46.95
+        },
+        {
+          "name": "2 Day Cleanse",
+          "price": 89.95
+        },
+        {
+          "name": "3 Day Cleanse",
+          "price": 134.95
+        }
+      ],
+      "per_day": [
+        "2 Evergreen",
+        "1 Heart Beet",
+        "1 Refresher",
+        "1 Sunset Detox"
+      ],
+      "build_your_own": "Pick 5 juices from the menu",
+      "advance_order": "2–3 hours"
+    }
+  ],
+  "allergy_notice": "Any item may contain peanuts, tree nuts, gluten, wheat, soy or dairy."
+}

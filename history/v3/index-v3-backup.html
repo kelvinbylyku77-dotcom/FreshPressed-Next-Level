@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f0e5" />
+  <title>FreshPressed — Cold Pressed Juice, Smoothies & Açaí</title>
+  <meta name="description" content="FreshPressed cold-pressed juice, smoothies, açaí bowls, shots and cleanses. Order online for pickup or local delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-page">
+  <div class="announcement">
+    <span>FRESHLY MADE IN CONNECTICUT</span><i></i><span>PICKUP + LOCAL DELIVERY</span><i></i><span>$12 DELIVERY MINIMUM</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="FreshPressed home">
+      <img src="https://images.squarespace-cdn.com/content/v1/59b97405017db2ca29fa8e35/a529326e-8b91-4655-a55a-1b5863d30bb4/chelsey-designs_freshpressed_logo.jpg" alt="FreshPressed" />
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?cat=juice">Juices</a>
+      <a href="shop.html?cat=bowl">Açaí</a>
+      <a href="#cleanse">Cleanses</a>
+      <a href="#story">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchOpen" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="cartOpen">Bag <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuOpen" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="home-hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PLANTSVILLE, CONNECTICUT</p>
+        <h1>Fresh made.<br><em>Your way.</em></h1>
+        <p>Cold-pressed juices, smoothies, açaí bowls, shots and more — made fresh and ready for pickup or local delivery.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="shop.html">Shop the full menu <span>↗</span></a>
+          <a class="text-link" href="#made-your-way">Build your own <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><b>Fresh daily</b><span>Made in-store</span></div>
+          <div><b>$12 minimum</b><span>Local delivery</span></div>
+          <div><b>Order ahead</b><span>Easy pickup</span></div>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <img src="public/media/green-smoothie.jpg" alt="FreshPressed green smoothie with pineapple and banana" />
+        <div class="hero-badge"><span>FRESH</span><b>MADE</b><small>IN CT</small></div>
+        <div class="hero-caption">
+          <span>MADE IN THE MOMENT</span>
+          <b>Real ingredients. Real FreshPressed.</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip section-shell" aria-label="Shop categories">
+      <a href="shop.html?cat=juice"><span class="cat-dot lime"></span><div><b>Cold-Pressed</b><small>Juices</small></div><em>→</em></a>
+      <a href="shop.html?cat=smoothie"><span class="cat-dot berry"></span><div><b>Smoothies</b><small>20 oz blends</small></div><em>→</em></a>
+      <a href="shop.html?cat=bowl"><span class="cat-dot purple"></span><div><b>Açaí Bowls</b><small>Build a bowl</small></div><em>→</em></a>
+      <a href="shop.html?cat=shot"><span class="cat-dot gold"></span><div><b>Shots</b><small>3 oz boosts</small></div><em>→</em></a>
+      <a href="shop.html?cat=coffee"><span class="cat-dot coffee"></span><div><b>Coffee + Tea</b><small>Hot + iced</small></div><em>→</em></a>
+    </section>
+
+    <section class="featured section-shell section-space">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">FEATURED RIGHT NOW</p>
+          <h2>A few favorites.<br><em>Not the whole menu.</em></h2>
+        </div>
+        <a href="shop.html" class="btn btn-outline">Shop all products <span>→</span></a>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="acai-feature section-shell section-space" id="acai">
+      <div class="acai-photo reveal">
+        <img src="public/media/fruit-bowl.jpg" alt="Fresh fruit açaí bowl with strawberries, kiwi, pineapple and blueberries" />
+        <span class="photo-label">AÇAÍ • BUILT FRESH</span>
+      </div>
+      <div class="acai-copy reveal">
+        <p class="eyebrow">DON'T FORGET THE BOWLS</p>
+        <h2>Fruit-forward.<br><em>Loaded your way.</em></h2>
+        <p>Organic dairy-free açaí, granola and fresh toppings. Go with a FreshPressed favorite or build your own bowl from the base up.</p>
+        <div class="price-note"><strong>Bowls from $10.95</strong><span>Build your own starts at $4.95 + toppings</span></div>
+        <a class="btn btn-dark" href="shop.html?cat=bowl">Shop açaí bowls <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="make-it section-space" id="made-your-way">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <div><p class="eyebrow light">MADE YOUR WAY</p><h2>Start with fresh.<br><em>Finish it your way.</em></h2></div>
+        </div>
+        <div class="make-grid">
+          <article class="make-card reveal">
+            <video autoplay muted loop playsinline preload="metadata" poster="public/media/build-smoothie.jpg"><source src="public/media/build-smoothie.mp4" type="video/mp4"></video>
+            <div class="make-overlay"><span>BUILD YOUR OWN</span><h3>Smoothie</h3><p>Pick the flavor direction and add superfoods when you want them.</p><a href="shop.html?cat=smoothie">Shop smoothies →</a></div>
+          </article>
+          <article class="make-card reveal">
+            <video autoplay muted loop playsinline preload="metadata" poster="public/media/build-bowl.jpg"><source src="public/media/build-bowl.mp4" type="video/mp4"></video>
+            <div class="make-overlay"><span>BUILD YOUR OWN</span><h3>Açaí Bowl</h3><p>Start with açaí + granola, then make the toppings yours.</p><a href="shop.html?cat=bowl">Shop bowls →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="duo-promos section-shell section-space">
+      <article class="promo-tile shots reveal">
+        <div class="promo-copy">
+          <p class="eyebrow">3 OZ • $4.99</p>
+          <h3>Small shot.<br>Big flavor.</h3>
+          <p>Ginger Lemon, Apple Cider Vinegar, or Turmeric Apple.</p>
+          <a href="shop.html?cat=shot">Shop immunity shots →</a>
+        </div>
+        <video autoplay muted loop playsinline preload="metadata" poster="public/media/immunity-shots.jpg"><source src="public/media/immunity-shots.mp4" type="video/mp4"></video>
+      </article>
+      <article class="promo-tile cleanse-tile reveal" id="cleanse">
+        <div class="promo-copy">
+          <p class="eyebrow light">FP SIGNATURE CLEANSE</p>
+          <h3>A fresh reset,<br>ready when you are.</h3>
+          <p>Five 16 oz juices per day. Choose 1, 2 or 3 days.</p>
+          <div class="cleanse-inline"><span>1 day <b>$46.95</b></span><span>2 days <b>$89.95</b></span><span>3 days <b>$134.95</b></span></div>
+          <a href="shop.html?cat=cleanse">Shop cleanses →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="story section-shell section-space" id="story">
+      <div class="story-video reveal">
+        <video autoplay muted loop playsinline preload="metadata" poster="public/media/food-prep.jpg"><source src="public/media/food-prep.mp4" type="video/mp4"></video>
+      </div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">FRESH MEANS FRESH</p>
+        <h2>Made here.<br><em>Not pulled from a warehouse.</em></h2>
+        <p>The website should feel the same way the products do: bright, fresh and made with care. Real prep footage and real FreshPressed food do the talking.</p>
+        <a href="shop.html" class="text-link dark">See everything on the menu <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="signup section-shell section-space reveal">
+      <div><p class="eyebrow light">THE FRESH LIST</p><h2>$5 off your first online order.</h2><p>Sign up for new drops, offers and a reason to order your favorite again.</p></div>
+      <form id="signupForm"><label class="sr-only" for="signupEmail">Email address</label><input id="signupEmail" type="email" required placeholder="Email address" /><button type="submit">Join the list →</button></form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><a class="brand" href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/59b97405017db2ca29fa8e35/a529326e-8b91-4655-a55a-1b5863d30bb4/chelsey-designs_freshpressed_logo.jpg" alt="FreshPressed" /></a><p>Cold pressed juices, smoothies, bowls and more. Freshly made in Plantsville, Connecticut.</p></div>
+    <div><b>Shop</b><a href="shop.html?cat=juice">Juices</a><a href="shop.html?cat=smoothie">Smoothies</a><a href="shop.html?cat=bowl">Açaí Bowls</a><a href="shop.html?cat=shot">Shots</a></div>
+    <div><b>Visit</b><span>930 Meriden-Waterbury Turnpike</span><span>Plantsville, CT 06479</span><span>(860) 426-0342</span></div>
+    <div><b>Ordering</b><span>Pickup + local delivery</span><span>$12 delivery minimum</span><span>Cleanse pickup: order 2–3 hrs ahead</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><span>YOUR BAG</span><b id="cartTitle">FreshPressed order</b></div><button data-close aria-label="Close">×</button></div>
+    <div class="fulfillment"><button class="fulfill active" data-fulfill="pickup">Pickup</button><button class="fulfill" data-fulfill="delivery">Delivery</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot"><div id="deliveryNotice" class="delivery-notice hidden"></div><div class="total-row"><span>Subtotal</span><b id="cartTotal">$0.00</b></div><button class="btn btn-dark full" id="checkout">Continue to checkout</button><small>Prototype checkout — Shopify connects here in production.</small></div>
+  </aside>
+  <aside class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="drawer-head"><div><span>SEARCH</span><b>What sounds good?</b></div><button data-close aria-label="Close">×</button></div>
+    <input id="searchInput" class="search-input" placeholder="Try “açaí”, “ginger” or “protein”" />
+    <div id="searchResults"></div>
+  </aside>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button data-close aria-label="Close">×</button>
+    <nav><a href="shop.html">Shop all</a><a href="shop.html?cat=juice">Cold-Pressed Juices</a><a href="shop.html?cat=smoothie">Smoothies</a><a href="shop.html?cat=bowl">Açaí Bowls</a><a href="shop.html?cat=shot">Shots</a><a href="shop.html?cat=coffee">Coffee + Tea</a><a href="#cleanse">Cleanses</a></nav>
+  </aside>
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

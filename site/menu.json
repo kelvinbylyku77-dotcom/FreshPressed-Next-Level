@@ -1,0 +1,878 @@
+{
+  "source": {
+    "url": "https://www.freshpressed-ct.com/menu",
+    "verifiedOn": "2026-09-13",
+    "method": "Live menu HTML and visual inspection; grouped price rows retained, including blanks. Tea ambiguity documented."
+  },
+  "pricing": {
+    "smoothieBoostCents": 200,
+    "bowlBaseCents": 495,
+    "bowlToppingCents": 200,
+    "juiceIngredientPrices": {
+      "2": 895,
+      "3": 995,
+      "4": 1095
+    },
+    "specialJuiceFromCents": 1195,
+    "alternativeMilkCents": {
+      "12": 50,
+      "16": 100
+    },
+    "flavorShotCents": 50,
+    "deliveryMinimumCents": 1200
+  },
+  "boosts": [
+    "Plant Based Protein",
+    "Chia Seeds",
+    "Hemp Seeds",
+    "Flax Seeds",
+    "Blue Spirulina",
+    "Matcha Powder",
+    "Collagen Powder",
+    "MultiVitamin Powder",
+    "Turmeric Powder"
+  ],
+  "fruitOptions": [
+    "Banana",
+    "Strawberries",
+    "Blueberries",
+    "Kiwi",
+    "Pineapple",
+    "Raspberries",
+    "Green Apple"
+  ],
+  "toppingOptions": [
+    "Sliced Almonds",
+    "Chia Seeds",
+    "Honey",
+    "Coconut Flakes",
+    "Peanut Butter",
+    "Nutella",
+    "Almond Butter",
+    "Flax Seeds"
+  ],
+  "juiceOptions": [
+    "Kale",
+    "Green Apple",
+    "Cucumber",
+    "Lemon",
+    "Carrot",
+    "Orange",
+    "Ginger",
+    "Turmeric",
+    "Beets",
+    "Spinach",
+    "Celery",
+    "Pineapple",
+    "Grapefruit",
+    "Lime"
+  ],
+  "coffeeMilks": [
+    "Almond Milk",
+    "Oat Milk"
+  ],
+  "coffeeFlavors": [
+    "Mocha",
+    "Caramel",
+    "Vanilla",
+    "Hazelnut",
+    "Salted Caramel"
+  ],
+  "products": [
+    {
+      "id": "strawberry-banana",
+      "name": "Strawberry Banana",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Almond Milk, Strawberry, Banana, Date",
+      "size": "20 oz",
+      "image": "media/official-smoothie-pour.webp",
+      "cutout": false,
+      "representative": true,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "very-berry",
+      "name": "Very Berry",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Strawberry, Blackberry, Blueberry, Pineapple, Orange Juice",
+      "size": "20 oz",
+      "image": "media/very-berry.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "blue-fusion",
+      "name": "Blue Fusion",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Coconut Milk, Mango, Peach, Passion Fruit, Date, Blue Spirulina",
+      "size": "20 oz",
+      "image": "media/blue-fusion.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#d4e4e8"
+    },
+    {
+      "id": "tropical-press",
+      "name": "Tropical Press",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Passion Fruit, Mango, Banana, Hint of Honey",
+      "size": "20 oz",
+      "image": "media/official-smoothie-pour.webp",
+      "cutout": false,
+      "representative": true,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "green-machine",
+      "name": "Green Machine",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Spinach, Kale, Banana, Apple Juice, Pineapple",
+      "size": "20 oz",
+      "image": "media/green-smoothie-2.webp",
+      "cutout": false,
+      "representative": false,
+      "bg": "#e3e8c5"
+    },
+    {
+      "id": "mango-fresh",
+      "name": "Mango Fresh",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Mango, Strawberry, Mango Sherbet, Apple Juice",
+      "size": "20 oz",
+      "image": "media/official-smoothie-pour.webp",
+      "cutout": false,
+      "representative": true,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "super-smoothie",
+      "name": "Super Smoothie",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Açaí, Banana, Strawberry, Blueberry, Peanut Butter, Almond Milk, Chia Seeds",
+      "size": "20 oz",
+      "image": "media/posters/red-smoothie-shoot-3.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "protein-pro",
+      "name": "Protein Pro",
+      "cat": "smoothie",
+      "priceCents": 1195,
+      "desc": "Organic Cacao Nibs, Banana, Peanut Butter, Whey Protein, Organic Agave, Almond Milk",
+      "size": "20 oz",
+      "image": "media/protein.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "sweet-protein",
+      "name": "Sweet Protein",
+      "cat": "smoothie",
+      "priceCents": 1195,
+      "desc": "Chocolate Plant Protein, Dates, Banana, Walnuts, Almond Milk, Cacao Nibs",
+      "size": "20 oz",
+      "image": "media/sweet-protein.jpg",
+      "cutout": false,
+      "representative": false,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "mocha-press",
+      "name": "Mocha Press",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Almond Milk, Espresso, Cacao, Banana, Peanut Butter, Vanilla, Coconut Oil, Dates",
+      "size": "20 oz",
+      "image": "media/mocha.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#e4dac9"
+    },
+    {
+      "id": "dragon-bliss",
+      "name": "Dragon Bliss",
+      "cat": "smoothie",
+      "priceCents": 995,
+      "desc": "Dragon Fruit, Passion Fruit, Mango, Banana, Honey",
+      "size": "20 oz",
+      "image": "media/dragon-bliss.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#edd3d7"
+    },
+    {
+      "id": "whole-greens",
+      "name": "Whole Greens",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Kale, Green Apple, Cucumber, Lemon",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "immunity-juice",
+      "name": "Immunity Juice",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Carrot, Orange, Ginger, Turmeric",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "heart-beet",
+      "name": "Heart Beet",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Beets, Carrots, Apple, Orange, Lemon",
+      "size": "16 oz",
+      "image": "media/heart-beet.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "evergreen",
+      "name": "Evergreen",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Spinach, Kale, Celery, Cucumber, Apple",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "refresher",
+      "name": "Refresher",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Pineapple, Celery, Apple, Ginger",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "sunset-detox",
+      "name": "Sunset Detox",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Carrot, Apple, Pineapple, Lemon, Ginger",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "citrus-breeze",
+      "name": "Citrus Breeze",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Orange, Grapefruit, Lemon, Lime",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": false,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "golden-glow",
+      "name": "Golden Glow",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Orange, Pineapple, Lemon, Ginger",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "fresh-breeze",
+      "name": "Fresh Breeze",
+      "cat": "juice",
+      "priceCents": 995,
+      "desc": "Pineapple, Apple, Cucumber, Kale, Lime",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb"
+    },
+    {
+      "id": "fp-bowl",
+      "name": "FP Bowl",
+      "cat": "bowl",
+      "priceCents": 1095,
+      "desc": "Açaí topped with Granola, Banana, Strawberries, Blueberries, Sliced Almonds, Chia Seeds, and Honey",
+      "size": "",
+      "image": "media/posters/acai-bowl-30-fps.jpg",
+      "cutout": false,
+      "representative": false,
+      "bg": "#e6d3df"
+    },
+    {
+      "id": "nutty-delight-bowl",
+      "name": "Nutty Delight Bowl",
+      "cat": "bowl",
+      "priceCents": 1095,
+      "desc": "Açaí topped with Granola, Banana, Green Apples, Coconut Flakes, Almond Slices, Nutella and Peanut Butter",
+      "size": "",
+      "image": "media/apple-acai.jpg",
+      "cutout": false,
+      "representative": false,
+      "bg": "#e6d3df"
+    },
+    {
+      "id": "tropical-bowl",
+      "name": "Tropical Bowl",
+      "cat": "bowl",
+      "priceCents": 1095,
+      "desc": "Açaí topped with Granola, Kiwi, Pineapple, Strawberries, Blueberries, Raspberries and Honey",
+      "size": "",
+      "image": "media/fruit-bowl-2.webp",
+      "cutout": false,
+      "representative": false,
+      "bg": "#e6d3df"
+    },
+    {
+      "id": "healthy-bowl",
+      "name": "Healthy Bowl",
+      "cat": "bowl",
+      "priceCents": 1195,
+      "desc": "Açaí topped with Granola, Almond Butter, Strawberries, Pineapple, Flax Seed, Honey, Coconut Flakes",
+      "size": "",
+      "image": "media/fruit-bowl-2.webp",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6d3df"
+    },
+    {
+      "id": "fp-yogurt-bowl",
+      "name": "FP Yogurt Bowl",
+      "cat": "bowl",
+      "priceCents": 1095,
+      "desc": "Greek Yogurt topped with Strawberries, Blueberries, Kiwi, Goji Berries, Flax Seeds and Honey",
+      "size": "",
+      "image": "media/fruit-bowl-2.webp",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6d3df"
+    },
+    {
+      "id": "avocado-toast",
+      "name": "Avocado Toast",
+      "cat": "food",
+      "priceCents": 495,
+      "desc": "Organic Wheat Sprouted Toast. Topped with Everything Bagel Seasoning",
+      "size": "",
+      "image": "media/posters/fresh-pressed-toast-2nd-shoot.jpg",
+      "cutout": false,
+      "representative": false,
+      "bg": "#e4e9cc"
+    },
+    {
+      "id": "cucumber-hummus",
+      "name": "Cucumber Hummus",
+      "cat": "food",
+      "priceCents": 495,
+      "desc": "Organic Wheat Sprouted Toast. Red Pepper or Plain Hummus with Sliced Cucumbers, Olive Oil, Salt & Pepper",
+      "size": "",
+      "image": "media/posters/fresh-pressed-toast-2nd-shoot.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e4e9cc"
+    },
+    {
+      "id": "pb-banana",
+      "name": "PB Banana",
+      "cat": "food",
+      "priceCents": 495,
+      "desc": "Organic Wheat Sprouted Toast. Peanut Butter, Banana, Honey & Chia Seeds",
+      "size": "",
+      "image": "media/posters/fresh-pressed-toast-2nd-shoot.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e4e9cc"
+    },
+    {
+      "id": "strawberry-nutella",
+      "name": "Strawberry Nutella",
+      "cat": "food",
+      "priceCents": 495,
+      "desc": "Organic Wheat Sprouted Toast. Nutella Spread, Fresh Strawberries, Coconut Flakes",
+      "size": "",
+      "image": "media/posters/fresh-pressed-toast-2nd-shoot.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e4e9cc"
+    },
+    {
+      "id": "ginger-lemon-cayenne",
+      "name": "Ginger Lemon Cayenne",
+      "cat": "shot",
+      "priceCents": 499,
+      "desc": "Ginger, Lemon, Cayenne Pepper",
+      "size": "3 oz",
+      "image": "media/posters/immunity-shots.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#eee1b7"
+    },
+    {
+      "id": "acv-honey-lemon",
+      "name": "ACV Honey Lemon",
+      "cat": "shot",
+      "priceCents": 499,
+      "desc": "Apple Cider Vinegar, Honey, Lemon Juice",
+      "size": "3 oz",
+      "image": "media/posters/immunity-shots.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#eee1b7"
+    },
+    {
+      "id": "turmeric-apple",
+      "name": "Turmeric Apple",
+      "cat": "shot",
+      "priceCents": 499,
+      "desc": "Turmeric, Apple",
+      "size": "3 oz",
+      "image": "media/posters/immunity-shots.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#eee1b7"
+    },
+    {
+      "id": "hot-coffee",
+      "name": "Hot Coffee",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 300,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 400,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "iced-coffee",
+      "name": "Iced Coffee",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 300,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 400,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "cold-brew",
+      "name": "Cold Brew",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 500,
+          "sizeOz": 16
+        }
+      ],
+      "from": false
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "Single / Double",
+      "image": "media/posters/espresso.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "single",
+          "label": "Single",
+          "priceCents": 300,
+          "sizeOz": null
+        },
+        {
+          "id": "double",
+          "label": "Double",
+          "priceCents": 400,
+          "sizeOz": null
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "cappuccino",
+      "name": "Cappuccino",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 500,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "latte",
+      "name": "Latte",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 500,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "iced-latte",
+      "name": "Iced Latte",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": false
+    },
+    {
+      "id": "macchiato",
+      "name": "Macchiato",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz",
+      "image": "media/posters/espresso.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 400,
+          "sizeOz": 12
+        }
+      ],
+      "from": false
+    },
+    {
+      "id": "americano",
+      "name": "Americano",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz",
+      "image": "media/posters/espresso.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 400,
+          "sizeOz": 12
+        }
+      ],
+      "from": false
+    },
+    {
+      "id": "matcha-latte",
+      "name": "Matcha Latte",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 500,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "chai-latte",
+      "name": "Chai Latte",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 500,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "iced-chai-latte",
+      "name": "Iced Chai Latte",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "12 oz / 16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "12oz",
+          "label": "12 oz",
+          "priceCents": 500,
+          "sizeOz": 12
+        },
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 600,
+          "sizeOz": 16
+        }
+      ],
+      "from": true
+    },
+    {
+      "id": "hot-cocoa",
+      "name": "Hot Cocoa",
+      "cat": "coffee",
+      "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
+      "size": "16 oz",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "variants": [
+        {
+          "id": "16oz",
+          "label": "16 oz",
+          "priceCents": 400,
+          "sizeOz": 16
+        }
+      ],
+      "from": false
+    },
+    {
+      "id": "hot-tea",
+      "name": "Hot Tea",
+      "cat": "tea",
+      "priceCents": null,
+      "desc": "Freshly prepared in store. Please call us to confirm sizes and pricing.",
+      "size": "",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "priceNote": "The official tea table has one $3.50 entry without a clear Hot Tea / Iced Tea association. Awaiting confirmation; do not sell at an inferred price."
+    },
+    {
+      "id": "iced-tea",
+      "name": "Iced Tea",
+      "cat": "tea",
+      "priceCents": null,
+      "desc": "Freshly prepared in store. Please call us to confirm sizes and pricing.",
+      "size": "",
+      "image": "media/coffee.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#e6ded2",
+      "priceNote": "The official tea table has one $3.50 entry without a clear Hot Tea / Iced Tea association. Awaiting confirmation; do not sell at an inferred price."
+    },
+    {
+      "id": "1-day-cleanse",
+      "name": "1 Day Cleanse",
+      "cat": "cleanse",
+      "priceCents": 4695,
+      "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
+      "size": "5 × 16 oz juices",
+      "image": "media/green-drink.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#dfe7c3"
+    },
+    {
+      "id": "2-day-cleanse",
+      "name": "2 Day Cleanse",
+      "cat": "cleanse",
+      "priceCents": 8995,
+      "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
+      "size": "10 × 16 oz juices",
+      "image": "media/green-drink.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#dfe7c3"
+    },
+    {
+      "id": "3-day-cleanse",
+      "name": "3 Day Cleanse",
+      "cat": "cleanse",
+      "priceCents": 13495,
+      "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
+      "size": "15 × 16 oz juices",
+      "image": "media/green-drink.jpg",
+      "cutout": false,
+      "representative": true,
+      "bg": "#dfe7c3"
+    },
+    {
+      "id": "custom-bowl",
+      "name": "Create Your Own Bowl",
+      "cat": "bowl",
+      "priceCents": null,
+      "from": true,
+      "desc": "Organic açaí base + granola. Each additional topping is $2.",
+      "size": "Made your way",
+      "image": "media/fruit-bowl-2.webp",
+      "cutout": false,
+      "bg": "#e6d3df",
+      "builder": "bowl"
+    },
+    {
+      "id": "custom-juice",
+      "name": "Create Your Own Juices",
+      "cat": "juice",
+      "priceCents": null,
+      "from": true,
+      "desc": "2 ingredients $8.95 · 3 $9.95 · 4 $10.95. Specialty blends from $11.95 in store.",
+      "size": "16 oz",
+      "image": "media/citrus-breeze.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#eee4bb",
+      "builder": "juice"
+    },
+    {
+      "id": "custom-smoothie",
+      "name": "Build Your Own Smoothie",
+      "cat": "smoothie",
+      "priceCents": null,
+      "from": true,
+      "desc": "Choose a menu blend, then make it yours with $2 boosts.",
+      "size": "20 oz",
+      "image": "media/dragon-bliss.webp",
+      "cutout": true,
+      "representative": true,
+      "bg": "#edd3d7",
+      "builder": "smoothie"
+    }
+  ]
+}
