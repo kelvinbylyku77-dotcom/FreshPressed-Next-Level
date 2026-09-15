@@ -1,0 +1,54 @@
+id,product,category,action,quality_status,recommended_image,representative,source,note
+strawberry-banana,Strawberry Banana,smoothie,KEEP,KEEP / NEEDS EXACT,media/official-smoothie-pour.webp,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+very-berry,Very Berry,smoothie,KEEP,EXACT / KEEP,media/very-berry.webp,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+blue-fusion,Blue Fusion,smoothie,KEEP,EXACT / KEEP,media/blue-fusion.webp,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+tropical-press,Tropical Press,smoothie,KEEP,KEEP / NEEDS EXACT,media/official-smoothie-pour.webp,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+green-machine,Green Machine,smoothie,KEEP,STRONG / KEEP,media/green-smoothie-2.webp,False,Existing Fresh Pressed still,Current image is relevant and stronger than available unconfirmed replacements.
+mango-fresh,Mango Fresh,smoothie,UPDATED,EXACT,media/curated/mango-fresh-instagram.webp,False,Instagram still supplied by user,Caption explicitly identifies Mango Fresh Smoothie.
+super-smoothie,Super Smoothie,smoothie,KEEP,KEEP / NEEDS EXACT,media/posters/red-smoothie-shoot-3.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+protein-pro,Protein Pro,smoothie,KEEP,STRONG / KEEP,media/protein.jpg,True,Existing Fresh Pressed still,Current image is relevant and stronger than available unconfirmed replacements.
+sweet-protein,Sweet Protein,smoothie,KEEP,EXACT / KEEP,media/sweet-protein.jpg,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+mocha-press,Mocha Press,smoothie,KEEP,EXACT / KEEP,media/mocha.webp,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+dragon-bliss,Dragon Bliss,smoothie,KEEP,EXACT / KEEP,media/dragon-bliss.webp,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+whole-greens,Whole Greens,juice,UPDATED,STRONG,media/curated/green-juice-instagram.webp,True,Instagram still supplied by user,Professional Fresh Pressed green-juice image; exact SKU is not named.
+immunity-juice,Immunity Juice,juice,UPDATED,STRONG,media/curated/orange-juice-process-instagram.webp,True,Instagram still supplied by user,Fresh-pressed orange process image fits the carrot/orange citrus profile; exact SKU is not named.
+heart-beet,Heart Beet,juice,UPDATED,EXACT,media/curated/heart-beet-instagram.webp,False,Instagram still supplied by user,Caption explicitly identifies Heart Beet.
+evergreen,Evergreen,juice,UPDATED,EXACT,media/curated/evergreen-bottle-instagram.webp,False,Instagram cleanse lineup supplied by user,Evergreen label is visible on the bottle.
+refresher,Refresher,juice,UPDATED,EXACT,media/curated/refresher-bottle-instagram.webp,False,Instagram cleanse lineup supplied by user,Refresher label is visible on the bottle.
+sunset-detox,Sunset Detox,juice,UPDATED,EXACT,media/curated/sunset-detox-bottle-instagram.webp,False,Instagram cleanse lineup supplied by user,Sunset Detox label is visible on the bottle.
+citrus-breeze,Citrus Breeze,juice,KEEP,EXACT / KEEP,media/citrus-breeze.webp,False,Existing product-specific Fresh Pressed asset,Already product-specific and visually strong.
+golden-glow,Golden Glow,juice,KEEP,KEEP / NEEDS EXACT,media/citrus-breeze.webp,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+fresh-breeze,Fresh Breeze,juice,KEEP,KEEP / NEEDS EXACT,media/citrus-breeze.webp,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+fp-bowl,FP Bowl,bowl,UPDATED,STRONG,media/fruit-bowl.jpg,True,Existing Fresh Pressed still,Finished bowl still is cleaner than a video poster.
+nutty-delight-bowl,Nutty Delight Bowl,bowl,UPDATED,STRONG,media/curated/nutella-acai-bowl-instagram.webp,True,Instagram still supplied by user,Instagram identifies a Nutella açaí bowl; visually matches the Nutella-forward menu item but the menu name differs.
+tropical-bowl,Tropical Bowl,bowl,UPDATED,EXACT,media/curated/tropical-bowl-instagram.webp,False,Instagram still supplied by user,Caption explicitly identifies Tropical Bowl.
+healthy-bowl,Healthy Bowl,bowl,UPDATED,STRONG,media/fruit-bowl-2.webp,True,Existing Fresh Pressed still,Strong bowl image; exact menu item not confirmed.
+fp-yogurt-bowl,FP Yogurt Bowl,bowl,UPDATED,STRONG,media/bowl-cream.webp,True,Existing Fresh Pressed still,Cream/yogurt-style bowl image fits the category better than the current generic fruit bowl.
+avocado-toast,Avocado Toast,food,UPDATED,STRONG,media/toast-2.jpg,True,Existing Fresh Pressed still,Static toast photo replaces a video-poster frame.
+cucumber-hummus,Cucumber Hummus,food,UPDATED,STRONG,media/curated/cucumber-toast-instagram.webp,True,Instagram still supplied by user,"Caption confirms cucumber toast; menu specifies cucumber + hummus, so keep representative flag until exact naming is confirmed."
+pb-banana,PB Banana,food,KEEP,KEEP / NEEDS EXACT,media/posters/fresh-pressed-toast-2nd-shoot.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+strawberry-nutella,Strawberry Nutella,food,KEEP,KEEP / NEEDS EXACT,media/posters/fresh-pressed-toast-2nd-shoot.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+ginger-lemon-cayenne,Ginger Lemon Cayenne,shot,UPDATED,CATEGORY,media/curated/immunity-shots-instagram.webp,True,Instagram still supplied by user,Professional immunity-shots category photo; individual shot identity is not shown.
+acv-honey-lemon,ACV Honey Lemon,shot,UPDATED,CATEGORY,media/curated/immunity-shots-instagram.webp,True,Instagram still supplied by user,Professional immunity-shots category photo; individual shot identity is not shown.
+turmeric-apple,Turmeric Apple,shot,UPDATED,CATEGORY,media/curated/immunity-shots-instagram.webp,True,Instagram still supplied by user,Professional immunity-shots category photo; individual shot identity is not shown.
+hot-coffee,Hot Coffee,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+iced-coffee,Iced Coffee,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+cold-brew,Cold Brew,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+espresso,Espresso,coffee,KEEP,KEEP / NEEDS EXACT,media/posters/espresso.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+cappuccino,Cappuccino,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+latte,Latte,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+iced-latte,Iced Latte,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+macchiato,Macchiato,coffee,KEEP,KEEP / NEEDS EXACT,media/posters/espresso.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+americano,Americano,coffee,KEEP,KEEP / NEEDS EXACT,media/posters/espresso.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+matcha-latte,Matcha Latte,coffee,UPDATED,EXACT,media/curated/matcha-latte-instagram.webp,False,Instagram still supplied by user,Caption explicitly identifies Matcha.
+chai-latte,Chai Latte,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+iced-chai-latte,Iced Chai Latte,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+hot-cocoa,Hot Cocoa,coffee,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+hot-tea,Hot Tea,tea,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+iced-tea,Iced Tea,tea,KEEP,KEEP / NEEDS EXACT,media/coffee.jpg,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+1-day-cleanse,1 Day Cleanse,cleanse,UPDATED,CATEGORY,media/curated/cleanse-lineup-instagram.webp,True,Instagram still supplied by user,Exact Fresh Pressed cleanse lineup; duration-specific packaging is not shown.
+2-day-cleanse,2 Day Cleanse,cleanse,UPDATED,CATEGORY,media/curated/cleanse-lineup-instagram.webp,True,Instagram still supplied by user,Exact Fresh Pressed cleanse lineup; duration-specific packaging is not shown.
+3-day-cleanse,3 Day Cleanse,cleanse,UPDATED,CATEGORY,media/curated/cleanse-lineup-instagram.webp,True,Instagram still supplied by user,Exact Fresh Pressed cleanse lineup; duration-specific packaging is not shown.
+custom-bowl,Create Your Own Bowl,bowl,UPDATED,CATEGORY,media/build-bowl.jpg,True,Existing Fresh Pressed still,Build-your-own visual communicates customization.
+custom-juice,Create Your Own Juices,juice,KEEP,KEEP / NEEDS EXACT,media/citrus-breeze.webp,True,Current site asset,No safer exact still has been confirmed; avoid replacing with a misleading image.
+custom-smoothie,Build Your Own Smoothie,smoothie,UPDATED,CATEGORY,media/build-smoothie.jpg,True,Existing Fresh Pressed still,Build-your-own smoothie visual communicates customization.
