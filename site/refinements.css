@@ -730,3 +730,12 @@
 @media (max-width: 600px) { .community .community-mark.brand-spark { width: 43px; height: 43px; flex-basis: 43px; padding-top: 0; } }
 
 body.motion-paused .announcement:hover .announcement-track, body.motion-paused .announcement:focus-within .announcement-track { animation-play-state: paused; }
+
+
+/* Live QA follow-up — remove the mobile Visit overflow and support the full category set. */
+.category-row { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+@media (max-width: 600px) {
+  .visit-section { grid-template-columns: minmax(0, 1fr); overflow-x: clip; }
+  .visit-copy, .visit-image { min-width: 0; width: 100%; max-width: 100%; }
+  .visit-exterior { right: 0; max-width: 48%; }
+}
