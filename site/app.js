@@ -72,7 +72,6 @@ function openDialog(id){
 }
 function closeDialog(dialog){
   if(!dialog?.open)return;
-  if(dialog.id==='promoDialog')writeStore('fp-v7-offer-dismissed',true,true);
   if(dialog.id==='mobileMenu')$('[data-menu]').setAttribute('aria-expanded','false');
   if(motionPaused){dialog.close();dialog._trigger?.isConnected&&dialog._trigger.focus();return;}
   dialog.classList.add('closing');
@@ -207,7 +206,13 @@ function showInfo(kind){
   const content=kind==='gift'?`<p class="eyebrow">GIVE A LITTLE FRESH</p><h2 id="infoTitle">Good taste.<br>Great gift.</h2><p>A fresh favorite makes a thoughtful treat. Contact our Plantsville store to ask about gift card availability.</p><a class="button" href="tel:+18604260342">Ask about gift cards ${icon('arrow')}</a>`:`<p class="eyebrow">A FRESH ROUTINE</p><h2 id="infoTitle">Same good sip.<br>More good days.</h2><p>Subscribe & save is coming to online ordering. Explore your favorites today; recurring orders and subscription savings are not available yet.</p><a class="button" href="shop.html?cat=juice">Find my daily fresh ${icon('arrow')}</a>`;
   $('#infoContent').innerHTML=content;openDialog('infoDialog');
 }
-function showPromo(){writeStore('fp-v7-offer-auto-shown',true,true);openDialog('promoDialog');}
+let promoShownThisLoad=false;
+let promoAutoTimer=null;
+function showPromo(){
+  promoShownThisLoad=true;
+  if(promoAutoTimer){clearTimeout(promoAutoTimer);promoAutoTimer=null;}
+  openDialog('promoDialog');
+}
 $('#offerForm').addEventListener('submit',async event=>{
   event.preventDefault();const input=$('#offerEmail'),button=$('#offerSubmit'),error=$('#offerError');
   const email=input.value.trim();error.textContent='';input.removeAttribute('aria-invalid');
@@ -228,18 +233,26 @@ $('#offerForm').addEventListener('submit',async event=>{
 });
 $('#offerReset').addEventListener('click',()=>{$('#offerFormState').hidden=false;$('#offerSuccess').hidden=true;$('#promoDialog').setAttribute('aria-labelledby','promoTitle');$('#offerError').textContent='';$('#offerEmail').focus();});
 let lastInteraction=0;
-document.addEventListener('pointerdown',()=>{lastInteraction=Date.now();},{passive:true});
-// On the homepage, surface the first-order offer after a few seconds on the first visit of the tab.
-// If another dialog is open at that exact moment, retry briefly instead of silently losing the offer.
+// iOS can reject muted autoplay while Low Power Mode is enabled. Retry visible editorial
+// films synchronously on the visitor's first touch so they start as soon as Safari permits it.
+document.addEventListener('pointerdown',()=>{
+  lastInteraction=Date.now();
+  retryVisibleVideosFromGesture();
+},{passive:true});
+
+// Surface the first-order offer on every fresh homepage load. This deliberately uses an
+// in-memory guard rather than sessionStorage so a reload behaves like a new storefront visit.
+// If another dialog is open at that moment, keep retrying until the UI is clear.
 function scheduleFirstOrderOffer(){
-  if(!document.body.classList.contains('home')||readStore('fp-v7-offer-auto-shown',false,true)||readStore('fp-v7-offer-dismissed',false,true))return;
+  if(!document.body.classList.contains('home')||promoShownThisLoad)return;
   let attempts=0;
   const tryOpen=()=>{
+    if(promoShownThisLoad)return;
     attempts++;
-    if(!document.hidden&&!$('dialog[open]')&&!cart.length&&Date.now()-lastInteraction>1200){showPromo();return;}
-    if(attempts<8)setTimeout(tryOpen,1800);
+    if(!document.hidden&&!$('dialog[open]')){showPromo();return;}
+    if(attempts<20)promoAutoTimer=setTimeout(tryOpen,1000);
   };
-  setTimeout(tryOpen,5200);
+  promoAutoTimer=setTimeout(tryOpen,4200);
 }
 scheduleFirstOrderOffer();
 
@@ -296,26 +309,89 @@ seedMotionTargets();
 const revealObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.04,rootMargin:'110px 0px 90px 0px'}):null;
 function observeReveals(){if(!revealObserver||motionPaused){$$('.reveal').forEach(el=>el.classList.add('visible'));return;}$$('.reveal:not(.visible)').forEach(el=>revealObserver.observe(el));}
 function updateVideoControl(video){const button=$('.film-toggle',video.closest('.film'));if(button){button.innerHTML=icon(video.paused?'play':'pause');button.setAttribute('aria-label',`${video.paused?'Play':'Pause'} ${video.getAttribute('aria-label')||'video'}`);}}
-function ensureVideo(video){if(!video.getAttribute('src')&&video.dataset.video){video.src=video.dataset.video;video.load();}video.muted=true;video.defaultMuted=true;video.playsInline=true;video.setAttribute('playsinline','');video.setAttribute('muted','');}
-function syncVideos(){
-  const open=$('dialog[open]'),mobile=matchMedia('(max-width: 900px)').matches;
-  const candidates=$$('video').filter(v=>v._inView&&!v._userPaused&&!v.closest('dialog:not([open])')&&(!open||open.contains(v))).sort((a,b)=>(b._ratio||0)-(a._ratio||0));
-  const allowed=!motionPaused&&!document.hidden&&!navigator.connection?.saveData?candidates.slice(0,mobile?2:3):[];
-  $$('video').forEach(video=>{
-    if(allowed.includes(video)){
-      ensureVideo(video);
-      if(video.paused){
-        const attempt=()=>video.play().then(()=>updateVideoControl(video)).catch(()=>updateVideoControl(video));
-        if(video.readyState>=2)attempt();else video.addEventListener('canplay',attempt,{once:true});
-      }
-    } else if(!video.paused) video.pause();
+function ensureVideoFallback(video){
+  const film=video.closest('.film');
+  if(!film||!video.poster||$('.video-fallback',film))return;
+  const image=document.createElement('img');
+  image.className='video-fallback';
+  image.src=video.poster;
+  image.alt='';
+  image.setAttribute('aria-hidden','true');
+  image.decoding='async';
+  film.prepend(image);
+}
+function ensureVideo(video){
+  if(!video.getAttribute('src')&&video.dataset.video){video.src=video.dataset.video;video.load();}
+  video.muted=true;video.defaultMuted=true;video.autoplay=true;video.loop=true;video.controls=false;video.playsInline=true;
+  video.setAttribute('autoplay','');video.setAttribute('loop','');video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');video.setAttribute('muted','');video.removeAttribute('controls');
+  video.preload='auto';
+  ensureVideoFallback(video);
+}
+function videoNearViewport(video){
+  const rect=video.getBoundingClientRect();
+  const margin=220;
+  return rect.bottom>=-margin&&rect.top<=innerHeight+margin&&rect.right>=0&&rect.left<=innerWidth;
+}
+function attemptVideoPlay(video,{gesture=false}={}){
+  if(!video||video._userPaused||document.hidden||video.closest('dialog:not([open])'))return Promise.resolve(false);
+  ensureVideo(video);
+  const film=video.closest('.film');
+  // Calling play() directly from pointerdown preserves the iOS user-activation window.
+  let result;
+  try{result=video.play();}catch{result=Promise.reject(new Error('play failed'));}
+  if(!result?.then){film?.classList.remove('autoplay-blocked');updateVideoControl(video);return Promise.resolve(true);}
+  return result.then(()=>{
+    film?.classList.remove('autoplay-blocked');
+    video.dataset.autoplayState='playing';
+    updateVideoControl(video);
+    return true;
+  }).catch(()=>{
+    video.dataset.autoplayState=gesture?'blocked-after-gesture':'blocked';
+    film?.classList.add('autoplay-blocked');
+    updateVideoControl(video);
+    return false;
   });
 }
+function syncVideos(){
+  const open=$('dialog[open]'),mobile=matchMedia('(max-width: 900px)').matches;
+  const candidates=$$('video[data-video]').filter(v=>
+    !v._userPaused&&!v.closest('dialog:not([open])')&&(!open||open.contains(v))&&(v._inView??videoNearViewport(v))
+  ).sort((a,b)=>(b._ratio||0)-(a._ratio||0));
+  const allowed=!document.hidden&&!navigator.connection?.saveData?candidates.slice(0,mobile?2:3):[];
+  $$('video[data-video]').forEach(video=>{
+    if(allowed.includes(video)){
+      if(video.paused)attemptVideoPlay(video);
+    }else if(!video.paused){video.pause();}
+  });
+}
+function retryVisibleVideosFromGesture(){
+  if(document.hidden)return;
+  const visible=$$('video[data-video]').filter(v=>!v._userPaused&&videoNearViewport(v));
+  // Keep this synchronous with the pointer event; iOS may only grant playback here.
+  visible.slice(0,2).forEach(video=>{attemptVideoPlay(video,{gesture:true});});
+}
 const filmObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>{
-  for(const entry of entries){entry.target._inView=entry.isIntersecting;entry.target._ratio=entry.intersectionRatio;}
+  for(const entry of entries){
+    entry.target._inView=entry.isIntersecting;
+    entry.target._ratio=entry.intersectionRatio;
+    if(entry.isIntersecting)attemptVideoPlay(entry.target);
+    else if(!entry.target.paused)entry.target.pause();
+  }
   syncVideos();
-},{rootMargin:'180px 0px 180px 0px',threshold:[0,.05,.2,.5,.8,1]}):null;
-function hydrateFilms(root=document){$$('video[data-video]',root).forEach(video=>{if(video.dataset.bound)return;video.dataset.bound='true';ensureVideo(video);video.addEventListener('play',()=>updateVideoControl(video));video.addEventListener('pause',()=>updateVideoControl(video));video.addEventListener('loadeddata',syncVideos,{once:true});filmObserver?.observe(video);});}
+},{rootMargin:'220px 0px 220px 0px',threshold:[0,.01,.05,.2,.5,.8,1]}):null;
+function hydrateFilms(root=document){
+  $$('video[data-video]',root).forEach(video=>{
+    if(video.dataset.bound)return;
+    video.dataset.bound='true';
+    ensureVideo(video);
+    video.addEventListener('play',()=>{video.closest('.film')?.classList.remove('autoplay-blocked');updateVideoControl(video);});
+    video.addEventListener('pause',()=>updateVideoControl(video));
+    video.addEventListener('loadedmetadata',()=>{if(videoNearViewport(video))attemptVideoPlay(video);},{once:true});
+    video.addEventListener('canplay',()=>{if(videoNearViewport(video))attemptVideoPlay(video);});
+    filmObserver?.observe(video);
+  });
+  requestAnimationFrame(syncVideos);
+}
 function applyMotion(){
   document.body.classList.toggle('motion-paused',motionPaused);
   syncVideos();observeReveals();
