@@ -1,11 +1,14 @@
-Fresh Pressed product card photo fix — Pass 12
+Fresh Pressed — Strawberry Accent Trial (Pass 13)
 
-What changed:
-- Replaced the Build Your Own Smoothie menu screenshot with a real Fresh Pressed smoothie lifestyle photo.
-- Replaced Create Your Own Bowl prep/frame imagery with a finished colorful bowl photo.
-- Converted Instagram product photography to card-ready 5:6 crops so cards display full-bleed rather than padded like stickers.
-- Removed cutout behavior from all card-ready photographic images.
-- Added a defensive CSS rule so card-ready photos always use full-bleed object-fit: cover.
-- No prices, descriptions, builders, variants, add-ons, delivery minimum or discount logic were changed.
+Changed only:
+- site/app.js
+- site/refinements.css
 
-Validated: menu integrity test passes all 50 named entries, 21 variants, 3 builders, add-ons and delivery boundary.
+What this trial does:
+- Keeps forest green as the primary brand/action color.
+- Adds a restrained strawberry/berry accent to the 20% popup.
+- Warms the existing acai and smoothie-builder editorial sections.
+- Adds subtle berry merchandising cues only to berry/red-fruit products.
+- Leaves the header, moving announcement bar, main Shop buttons, checkout, and core green navigation unchanged.
+
+Berry-accent products are selected by product name (e.g. Very Berry, Heart Beet, Dragon Bliss, Strawberry items, Tropical Bowl, Summer Bowl, Nutella bowl).

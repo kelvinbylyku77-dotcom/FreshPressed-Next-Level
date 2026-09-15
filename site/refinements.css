@@ -1748,3 +1748,74 @@ body.motion-paused .announcement-track {
   filter: none;
 }
 .product-card:hover .product-media > img[src*="/card-ready/"] { transform: scale(1.035); }
+
+/* ========================================================================== */
+/* Strawberry accent trial — restrained flavor-led color system               */
+/* ========================================================================== */
+:root {
+  --berry: #91384a;
+  --strawberry: #a63d50;
+  --strawberry-deep: #7f2d3d;
+  --strawberry-soft: #f2d8dd;
+  --strawberry-wash: #fbf0f2;
+}
+
+/* Keep the core Fresh Pressed identity green; berry is used for flavor and offers. */
+.promo-dialog {
+  border: 1px solid rgba(166,61,80,.16);
+  box-shadow: 0 28px 90px rgba(71,31,40,.22);
+}
+.promo-copy {
+  background: linear-gradient(155deg, var(--paper) 0%, var(--strawberry-wash) 100%);
+}
+.promo-copy h2 span { color: var(--strawberry); }
+.promo-copy .offer-subhead { color: var(--strawberry-deep); }
+.promo-copy .email-input:focus-within,
+#discountForm:focus-within {
+  border-color: rgba(166,61,80,.62);
+  box-shadow: 0 0 0 3px rgba(166,61,80,.09);
+}
+.promo-copy .button {
+  box-shadow: 0 9px 22px rgba(32,62,45,.12), 0 0 0 1px rgba(166,61,80,.04);
+}
+
+/* The existing bowl/smoothie editorial sections are the natural home for berry. */
+.acai-feature { background: var(--strawberry-soft); color: var(--berry); }
+.acai-film { border-color: var(--strawberry-soft); }
+.acai-photo { border-color: #e8bcc6; }
+.smoothie-build {
+  background: linear-gradient(135deg, #efd1d7 0%, #f6e3e6 100%);
+  color: var(--berry);
+}
+
+/* Berry-based products get a subtle merchandising cue, never a red wash over food. */
+.product-card.berry-accent .product-media {
+  outline: 1px solid rgba(166,61,80,.16);
+  outline-offset: -1px;
+  box-shadow: 0 10px 26px rgba(127,45,61,.055);
+}
+.product-card.berry-accent .product-tag {
+  background: rgba(251,240,242,.94);
+  color: var(--strawberry-deep);
+  border: 1px solid rgba(166,61,80,.14);
+}
+.product-card.berry-accent .product-title-line h3 a:hover { color: var(--strawberry-deep); }
+.product-card.berry-accent .quick-add:hover,
+.product-card.berry-accent .quick-add.added {
+  background: var(--strawberry);
+  border-color: var(--strawberry);
+  color: var(--paper);
+}
+
+/* Small sales cues, while primary checkout/shop actions remain forest green. */
+.discount-entry summary { color: var(--strawberry-deep); }
+#discountMessage:not(.error) { color: var(--strawberry-deep); }
+
+@media (max-width: 600px) {
+  .product-card.berry-accent .product-media {
+    box-shadow: 0 7px 18px rgba(127,45,61,.05);
+  }
+  .promo-copy {
+    background: linear-gradient(180deg, var(--paper) 0%, #fff8f9 100%);
+  }
+}
