@@ -917,3 +917,123 @@ body.motion-paused .announcement-track { animation-play-state: paused; }
   .film, .film video, .video-fallback { backface-visibility: hidden; }
   .film video { will-change: opacity; }
 }
+
+/* Pass 5: CRO hierarchy + mobile editorial polish. */
+.energy-menu-cta { text-decoration: none; }
+
+/* Keep the cleanse story as copy → visual → action on mobile, while retaining a two-column editorial desktop layout. */
+.juice-copy { grid-column: 1; grid-row: 1; align-self: end; }
+.juice-lineup { grid-column: 2; grid-row: 1 / span 2; }
+.juice-actions { grid-column: 1; grid-row: 2; align-self: start; max-width: 430px; }
+.juice-actions .button { margin-top: 2px; }
+.juice-actions .text-link { display: flex; margin-top: 18px; font-size: 13px; }
+.juice-actions small { display: block; font-size: 12px; color: var(--muted); margin-top: 22px; }
+
+/* Give the lifestyle/tennis moment more visual weight without taking over the story section. */
+.lifestyle-note .film {
+  width: 154px;
+  height: 190px;
+  border-radius: 14px;
+  box-shadow: 0 15px 34px #07180e2e;
+}
+.lifestyle-note video,
+.lifestyle-note .video-fallback { object-position: 50% 50%; }
+
+/* Turn the dead space below the footer into an intentional premium finish. */
+.footer { position: relative; overflow: hidden; }
+.footer-finish {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 4px 0 max(24px, env(safe-area-inset-bottom));
+}
+.footer-glass {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 18px 16px 22px;
+  border: 1px solid #ffffff82;
+  border-radius: 24px;
+  background: linear-gradient(120deg, #ffffff86, #dce9a43d 55%, #ee713d1c);
+  box-shadow: inset 0 1px 0 #fff, 0 16px 42px #203e2d12;
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.footer-glass:hover { transform: translateY(-2px); box-shadow: inset 0 1px 0 #fff, 0 19px 48px #203e2d1c; }
+.footer-glass-copy { display: flex; flex-direction: column; gap: 2px; }
+.footer-glass-copy strong { font: 600 17px/1.2 var(--display); letter-spacing: -.02em; }
+.footer-glass-copy small { font-size: 11px; color: var(--muted); }
+.footer-glass-arrow {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--cream);
+  background: var(--forest);
+  flex: 0 0 auto;
+}
+.footer-glass-arrow .icon { transform: rotate(180deg); width: 18px; height: 18px; }
+
+@media (max-width: 600px) {
+  .energy-copy .energy-menu-cta { width: 100%; justify-content: space-between; }
+
+  .juice-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+    padding-bottom: 48px;
+    gap: 0;
+  }
+  .juice-copy { order: 1; width: 100%; }
+  .juice-copy > p:not(.eyebrow) { margin-bottom: 20px; }
+  .juice-lineup {
+    order: 2;
+    width: 100%;
+    height: 350px;
+    margin-top: 4px;
+    border-radius: 150px 150px 18px 18px;
+  }
+  .juice-actions {
+    order: 3;
+    width: 100%;
+    max-width: none;
+    padding-top: 18px;
+  }
+  .juice-actions .button {
+    width: 100%;
+    min-height: 50px;
+    justify-content: space-between;
+    padding-inline: 22px;
+  }
+  .juice-actions .text-link { font-size: 14px; margin-top: 14px; }
+  .juice-actions small { font-size: 12px; margin-top: 18px; }
+  .juice-word { top: 18px; left: 10%; font-size: 49px; }
+
+  .lifestyle-note {
+    gap: 24px;
+    padding-left: 0;
+    margin-top: 24px;
+  }
+  .lifestyle-note .film {
+    width: min(43vw, 172px);
+    height: min(52vw, 208px);
+    border-radius: 14px;
+    transform: rotate(-3deg);
+  }
+  .lifestyle-note > span { font-size: clamp(24px, 7vw, 31px); }
+
+  .footer { padding-bottom: 0; }
+  .footer-bottom { padding-bottom: 12px; }
+  .footer-finish { padding: 0 0 max(26px, env(safe-area-inset-bottom)); }
+  .footer-glass {
+    min-height: 82px;
+    border-radius: 22px;
+    padding: 15px 15px 15px 18px;
+    background: linear-gradient(135deg, #fffef9c7, #dce9a455 62%, #ee713d21);
+  }
+  .footer-glass-copy strong { font-size: 18px; }
+  .footer-glass-copy small { font-size: 10px; max-width: 220px; }
+}
