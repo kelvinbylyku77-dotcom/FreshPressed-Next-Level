@@ -1624,3 +1624,114 @@ html, body { background: var(--cream); }
   .header .logo { width: min(176px, 100%) !important; max-width: 176px !important; }
   .header-actions { width: 86px !important; min-width: 86px !important; }
 }
+
+/* ========================================================================== */
+/* PASS 10 — announcement banner only. Header and all page content untouched. */
+/* ========================================================================== */
+.announcement {
+  background: var(--forest) !important;
+  color: var(--cream) !important;
+  border-bottom: 1px solid rgba(248,246,235,.10) !important;
+  box-shadow: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  overflow: hidden !important;
+}
+
+.announcement .announcement-offer {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  color: var(--cream) !important;
+  overflow: hidden !important;
+}
+
+/* Continuous premium marquee: the first three messages are duplicated in the
+   markup, so translating exactly 50% creates a seamless loop. */
+.announcement-track {
+  display: flex !important;
+  align-items: center !important;
+  width: max-content !important;
+  height: 100% !important;
+  gap: 0 !important;
+  animation: promo-ticker 25s linear infinite !important;
+  will-change: transform !important;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.announcement-slide {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: max-content !important;
+  height: 100% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  padding: 0 22px 0 0 !important;
+  white-space: nowrap !important;
+  color: rgba(248,246,235,.88) !important;
+  font-size: 10.5px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  letter-spacing: .095em !important;
+}
+
+/* One separator between messages instead of a sparkle on both sides. */
+.announcement-slide .brand-spark:first-child {
+  display: none !important;
+}
+.announcement-slide .brand-spark:last-child {
+  display: block !important;
+  width: 9px !important;
+  height: 9px !important;
+  flex: 0 0 9px !important;
+  margin-left: 7px !important;
+  color: #e8c65e !important;
+}
+
+.announcement-slide strong {
+  color: #e4ef9a !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  font-weight: 700 !important;
+  letter-spacing: .085em !important;
+}
+
+/* It is intentionally always moving during normal use. */
+.announcement:hover .announcement-track,
+.announcement:focus-within .announcement-track,
+.announcement .announcement-track {
+  animation-play-state: running !important;
+}
+body.motion-paused .announcement-track {
+  animation-play-state: paused !important;
+}
+
+@media (max-width: 600px) {
+  .announcement { height: 32px !important; }
+  :root { --announcement-height: 32px; }
+  .announcement-track { animation-duration: 23s !important; }
+  .announcement-slide {
+    gap: 10px !important;
+    padding-right: 20px !important;
+    font-size: 9.5px !important;
+    letter-spacing: .08em !important;
+  }
+  .announcement-slide .brand-spark:last-child {
+    width: 8px !important;
+    height: 8px !important;
+    flex-basis: 8px !important;
+    margin-left: 6px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
