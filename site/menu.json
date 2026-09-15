@@ -146,7 +146,7 @@
       "priceCents": 995,
       "desc": "Mango, Strawberry, Mango Sherbet, Apple Juice",
       "size": "20 oz",
-      "image": "media/curated/mango-fresh-instagram.webp",
+      "image": "media/card-ready/mango-fresh-card.webp",
       "cutout": false,
       "bg": "#edd3d7"
     },
@@ -217,8 +217,8 @@
       "priceCents": 995,
       "desc": "Kale, Green Apple, Cucumber, Lemon",
       "size": "16 oz",
-      "image": "media/curated/green-juice-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/whole-greens-card.webp",
+      "cutout": false,
       "representative": true,
       "bg": "#eee4bb"
     },
@@ -229,8 +229,8 @@
       "priceCents": 995,
       "desc": "Carrot, Orange, Ginger, Turmeric",
       "size": "16 oz",
-      "image": "media/curated/orange-juice-process-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/immunity-juice-card.webp",
+      "cutout": false,
       "representative": true,
       "bg": "#eee4bb"
     },
@@ -241,8 +241,8 @@
       "priceCents": 995,
       "desc": "Beets, Carrots, Apple, Orange, Lemon",
       "size": "16 oz",
-      "image": "media/curated/heart-beet-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/heart-beet-card.webp",
+      "cutout": false,
       "bg": "#eee4bb"
     },
     {
@@ -252,8 +252,8 @@
       "priceCents": 995,
       "desc": "Spinach, Kale, Celery, Cucumber, Apple",
       "size": "16 oz",
-      "image": "media/curated/evergreen-bottle-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/evergreen-card.webp",
+      "cutout": false,
       "bg": "#eee4bb"
     },
     {
@@ -263,8 +263,8 @@
       "priceCents": 995,
       "desc": "Pineapple, Celery, Apple, Ginger",
       "size": "16 oz",
-      "image": "media/curated/refresher-bottle-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/refresher-card.webp",
+      "cutout": false,
       "bg": "#eee4bb"
     },
     {
@@ -274,8 +274,8 @@
       "priceCents": 995,
       "desc": "Carrot, Apple, Pineapple, Lemon, Ginger",
       "size": "16 oz",
-      "image": "media/curated/sunset-detox-bottle-instagram.webp",
-      "cutout": true,
+      "image": "media/card-ready/sunset-detox-card.webp",
+      "cutout": false,
       "bg": "#eee4bb"
     },
     {
@@ -333,7 +333,7 @@
       "priceCents": 1095,
       "desc": "Açaí topped with Granola, Banana, Green Apples, Coconut Flakes, Almond Slices, Nutella and Peanut Butter",
       "size": "",
-      "image": "media/curated/nutella-acai-bowl-instagram.webp",
+      "image": "media/card-ready/nutella-bowl-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#e6d3df"
@@ -345,7 +345,7 @@
       "priceCents": 1095,
       "desc": "Açaí topped with Granola, Kiwi, Pineapple, Strawberries, Blueberries, Raspberries and Honey",
       "size": "",
-      "image": "media/curated/tropical-bowl-instagram.webp",
+      "image": "media/card-ready/tropical-bowl-card.webp",
       "cutout": false,
       "bg": "#e6d3df"
     },
@@ -392,7 +392,7 @@
       "priceCents": 495,
       "desc": "Organic Wheat Sprouted Toast. Red Pepper or Plain Hummus with Sliced Cucumbers, Olive Oil, Salt & Pepper",
       "size": "",
-      "image": "media/curated/cucumber-toast-instagram.webp",
+      "image": "media/card-ready/cucumber-toast-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#e4e9cc"
@@ -428,7 +428,7 @@
       "priceCents": 499,
       "desc": "Ginger, Lemon, Cayenne Pepper",
       "size": "3 oz",
-      "image": "media/curated/immunity-shots-instagram.webp",
+      "image": "media/card-ready/immunity-shots-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#eee1b7"
@@ -440,7 +440,7 @@
       "priceCents": 499,
       "desc": "Apple Cider Vinegar, Honey, Lemon Juice",
       "size": "3 oz",
-      "image": "media/curated/immunity-shots-instagram.webp",
+      "image": "media/card-ready/immunity-shots-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#eee1b7"
@@ -452,7 +452,7 @@
       "priceCents": 499,
       "desc": "Turmeric, Apple",
       "size": "3 oz",
-      "image": "media/curated/immunity-shots-instagram.webp",
+      "image": "media/card-ready/immunity-shots-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#eee1b7"
@@ -673,7 +673,7 @@
       "cat": "coffee",
       "desc": "Freshly prepared in our Plantsville store. Choose your size and finishing touches.",
       "size": "12 oz / 16 oz",
-      "image": "media/curated/matcha-latte-instagram.webp",
+      "image": "media/card-ready/matcha-latte-card.webp",
       "cutout": false,
       "bg": "#e6ded2",
       "variants": [
@@ -797,7 +797,7 @@
       "priceCents": 4695,
       "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
       "size": "5 × 16 oz juices",
-      "image": "media/curated/cleanse-lineup-instagram.webp",
+      "image": "media/card-ready/cleanse-lineup-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#dfe7c3"
@@ -809,7 +809,7 @@
       "priceCents": 8995,
       "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
       "size": "10 × 16 oz juices",
-      "image": "media/curated/cleanse-lineup-instagram.webp",
+      "image": "media/card-ready/cleanse-lineup-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#dfe7c3"
@@ -821,7 +821,7 @@
       "priceCents": 13495,
       "desc": "Each day: 2 Evergreen, 1 Heart Beet, 1 Refresher and 1 Sunset Detox. Please allow 2–3 hours.",
       "size": "15 × 16 oz juices",
-      "image": "media/curated/cleanse-lineup-instagram.webp",
+      "image": "media/card-ready/cleanse-lineup-card.webp",
       "cutout": false,
       "representative": true,
       "bg": "#dfe7c3"
@@ -834,7 +834,7 @@
       "from": true,
       "desc": "Organic açaí base + granola. Each additional topping is $2.",
       "size": "Made your way",
-      "image": "media/build-bowl.jpg",
+      "image": "media/card-ready/build-bowl-card.webp",
       "cutout": false,
       "bg": "#e6d3df",
       "builder": "bowl",
@@ -862,8 +862,8 @@
       "from": true,
       "desc": "Choose a menu blend, then make it yours with $2 boosts.",
       "size": "20 oz",
-      "image": "media/build-smoothie.jpg",
-      "cutout": true,
+      "image": "media/card-ready/build-smoothie-card.webp",
+      "cutout": false,
       "representative": true,
       "bg": "#edd3d7",
       "builder": "smoothie"

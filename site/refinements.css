@@ -1735,3 +1735,16 @@ body.motion-paused .announcement-track {
     transform: none !important;
   }
 }
+
+/* PASS 12 — product photography: card-ready images are full-bleed, never sticker/cutout assets. */
+.product-media > img[src*="/card-ready/"],
+.detail-image > img[src*="/card-ready/"] {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none;
+  filter: none;
+}
+.product-card:hover .product-media > img[src*="/card-ready/"] { transform: scale(1.035); }
