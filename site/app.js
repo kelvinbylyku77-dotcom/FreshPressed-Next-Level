@@ -451,3 +451,44 @@ if(document.modelContext?.registerTool){
   try{Promise.resolve(document.modelContext.registerTool({name:'search_freshpressed_menu',title:'Search Fresh Pressed menu',description:'Read matching menu items, prices and ingredients. Does not change the bag or place an order.',inputSchema:{type:'object',properties:{query:{type:'string',maxLength:100},category:{type:'string',enum:['all','juice','smoothie','bowl','shot','food','coffee-tea','coffee','tea','cleanse']}},additionalProperties:false},annotations:{readOnlyHint:true},execute(input){if(!input||typeof input!=='object'||Object.keys(input).some(k=>!['query','category'].includes(k))||('query'in input&&typeof input.query!=='string')||(input.query?.length||0)>100||('category'in input&&!Object.keys(categoryNames).includes(input.category)))throw new Error('Use a valid category and a query of at most 100 characters.');const q=(input.query||'').toLowerCase();return products.filter(p=>(!input.category||input.category==='all'||(input.category==='coffee-tea'?['coffee','tea'].includes(p.cat):p.cat===input.category))&&`${p.name} ${p.desc}`.toLowerCase().includes(q)).map(p=>({id:p.id,name:p.name,category:p.cat,price:p.priceCents===null?null:p.priceCents/100,from:!!p.from,variants:p.variants||null,ingredients:p.desc}));}},{signal:lifecycle.signal})).catch(()=>{});}catch{/* Progressive enhancement only. */}
   window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
 }
+
+/* Pass 6: self-guided horizontal category rails. */
+
+/* Pass 6: self-guided horizontal category rails.
+   They move just enough to reveal that more choices exist, then pause for direct interaction. */
+function initAutoGlideRail(rail){
+  if(!rail || rail.dataset.autoGlideBound || motionPaused) return;
+  rail.dataset.autoGlideBound='true';
+  let timer=null;
+  let pausedUntil=0;
+  let programmatic=false;
+  const isScrollable=()=>rail.scrollWidth>rail.clientWidth+24;
+  const delay=rail.dataset.autoRail==='filters'?2900:3200;
+  const pauseFor=(ms=8500)=>{
+    pausedUntil=Date.now()+ms;
+    if(timer){clearTimeout(timer);timer=null;}
+    timer=setTimeout(tick,ms+300);
+  };
+  const tick=()=>{
+    if(motionPaused||document.hidden||Date.now()<pausedUntil||!isScrollable()){
+      timer=setTimeout(tick,1800);
+      return;
+    }
+    const max=rail.scrollWidth-rail.clientWidth;
+    const atEnd=rail.scrollLeft>=max-22;
+    const distance=rail.dataset.autoRail==='filters'
+      ? Math.min(178,rail.clientWidth*.46)
+      : Math.min(154,rail.clientWidth*.42);
+    programmatic=true;
+    rail.scrollTo({left:atEnd?0:Math.min(max,rail.scrollLeft+distance),behavior:'smooth'});
+    setTimeout(()=>{programmatic=false;},700);
+    timer=setTimeout(tick,delay);
+  };
+  ['pointerdown','touchstart','wheel'].forEach(type=>rail.addEventListener(type,()=>pauseFor(),{passive:true}));
+  rail.addEventListener('focusin',()=>pauseFor(10000));
+  rail.addEventListener('scroll',()=>{
+    if(!programmatic && rail.matches(':hover')) pauseFor(6500);
+  },{passive:true});
+  timer=setTimeout(tick,1800);
+}
+$$('[data-auto-rail]').forEach(initAutoGlideRail);
