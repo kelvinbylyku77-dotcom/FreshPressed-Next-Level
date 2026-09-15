@@ -1380,3 +1380,130 @@ html, body { background: var(--cream); }
 @media (prefers-reduced-motion: reduce) {
   .categories .small-heading .text-link::before { animation: none; }
 }
+
+/* Pass 8: rebalance the mobile header, make the promo ticker symmetrical, and add a post-tennis shop CTA. */
+
+/* A true slide-based marquee keeps each message centered instead of leaving clipped, one-sided phrases. */
+.announcement .announcement-offer {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+.announcement-track {
+  display: flex;
+  width: max-content;
+  animation: promo-ticker 27s linear infinite;
+  will-change: transform;
+}
+.announcement-slide {
+  flex: 0 0 100vw;
+  width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding-inline: 24px;
+  white-space: nowrap;
+  color: rgba(248,246,235,.9);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  line-height: 1;
+}
+.announcement-slide strong {
+  color: var(--lime);
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+.announcement-slide .brand-spark {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 9px;
+  color: #f0b447;
+}
+.announcement {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+}
+
+/* Keep the logo optically centered regardless of the two action icons on the right. */
+@media (max-width: 900px) {
+  .header-inner {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+  }
+  .mobile-toggle { justify-self: start; }
+  .header .logo { justify-self: center; margin: 0; }
+  .header-actions { justify-self: end; justify-content: flex-end; }
+}
+
+/* The tennis/lifestyle moment now hands shoppers directly into the menu. */
+.lifestyle-shop-cta {
+  margin-top: 24px;
+  min-width: 190px;
+  background: var(--lime);
+  color: var(--forest);
+  border-color: transparent;
+  box-shadow: 0 12px 28px rgba(0,0,0,.11);
+}
+.lifestyle-shop-cta:hover {
+  background: #e6efa3;
+  color: var(--forest);
+}
+
+@media (max-width: 600px) {
+  .announcement { height: 31px; }
+  :root { --announcement-height: 31px; }
+  .announcement-track { animation-duration: 25.5s; }
+  .announcement-slide {
+    gap: 13px;
+    padding-inline: 16px;
+    font-size: 9.5px;
+    letter-spacing: .085em;
+  }
+  .announcement-slide .brand-spark {
+    width: 8px;
+    height: 8px;
+    flex-basis: 8px;
+  }
+
+  .header-inner {
+    grid-template-columns: 1fr auto 1fr;
+    padding-inline: 14px;
+  }
+  .header .logo {
+    width: clamp(158px, 42vw, 180px);
+    max-width: 100%;
+  }
+  .header-actions { gap: 2px; }
+  .header-actions .search-link,
+  .header .bag-button,
+  .header .mobile-toggle {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+  }
+  .header-actions .icon { width: 20px; height: 20px; }
+  .bag-button .cart-count {
+    top: -1px;
+    right: -1px;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+
+  .lifestyle-shop-cta {
+    width: min(100%, 260px);
+    min-height: 50px;
+    margin: 22px 0 0 8px;
+    justify-content: space-between;
+    padding-inline: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track { animation: none; transform: none; }
+}
